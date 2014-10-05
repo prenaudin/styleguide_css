@@ -28,6 +28,10 @@ $silver: #CCCCCC;
   &.sassExample:after {
     content: 'SASS' !important;
   }
+
+  &.scssExample:after {
+    content: 'SCSS' !important;
+  }
 }
 
 .cortana-content ul {

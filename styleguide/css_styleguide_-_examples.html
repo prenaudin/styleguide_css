@@ -1,0 +1,622 @@
+
+<!DOCTYPE html>
+<html ng-app="cortana">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CSS Styleguide - Examples</title>
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="./theme-build/css/vendors.css">
+    <link rel="stylesheet" href="./theme-build/css/cortana.css">
+
+    <!-- Source CSS -->
+    
+      
+        <link rel="stylesheet" href="../assets/css/vendors.css">
+      
+        <link rel="stylesheet" href="../assets/css/styles.css">
+      
+    
+
+    <!--[if lt IE 9]>
+      <script src="theme-build/polyfill/html5shiv.js"></script>
+      <script src="theme-build/polyfill/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+  <body class="cortana-body"  ng-controller="MainController">
+
+    <div class="sb-slidebar sb-left cortana-sidenav sb-style-push">
+
+      
+      
+        
+        
+          
+        
+      
+        
+        
+      
+
+      <nav class="cortana-nav">
+        <ul>
+          
+            <li><a href="index.html">Home</a></li>
+          
+        </ul>
+        
+          <h3>CSS Styleguide</h3>
+          <ul>
+          
+            
+              
+              
+                <li><a class="active" href="css_styleguide_-_examples.html">Examples</a></li>
+              
+            
+          
+            
+              
+              
+                <li><a href="css_styleguide_-_conventions.html">Conventions</a></li>
+              
+            
+          
+          </ul>
+        
+      </nav>
+    </div>
+
+    <header class="cortana-header sb-slide">
+      
+        <h1>Examples</h1>
+      
+      <div id="open-left" class="cortana-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="cortana-search-wrapper" ng-controller="TypeaheadCtrl">
+        <input id="cortana-search" type="text" class="form-control cortana-search" ng-model="customSelected" placeholder="Search" typeahead="data as data.title for data in searchData | filter:{title:$viewValue}" typeahead-template-url="customTemplate.html" class="form-control" typeahead-on-select="onSelect($item, $model, $label)">
+      </div>
+    </header>
+
+    <div id="sb-site">
+
+      <div class="cortana-container">
+
+        <nav id="cortana-inside-nav" class="cortana-inside-nav" bs-affix>
+          <ul bs-scrollspy-list data-offset="-30">
+            
+              
+                <li><a href="#01start">Start</a></li>
+              
+            
+              
+                <li><a href="#02refactoring">Refactoring</a></li>
+              
+            
+              
+                <li><a href="#04framework">Framework</a></li>
+              
+            
+              
+                <li><a href="#05final">Final</a></li>
+              
+            
+          </ul>
+        </nav>
+
+        <div class="cortana-content-wrapper clearfix">
+          <div class="cortana-content">
+
+
+
+<h1 id="01start">Start</h1>
+
+<h1 id="02refactoring">Refactoring</h1>
+
+<h1 id="04framework">Framework</h1>
+
+<p>Ici, on réécrit l&#39;exemple avec Boostrap pour voir comment
+  celui-ci normalise ce dont on a besoin</p>
+</div><div class="codeExample"><div class="exampleOutput">    <section class="row framework">
+      <div class="col-xs-4">
+        <div class="user-profile panel panel-default text-center">
+          <div class="user-avatar user-avatar-large">
+            <img src="../assets/images/avatar.png"/>
+          </div>
+          <div class="panel-body">
+            <h2><b>MC Hammer</b></h2>
+
+            <ul class="user-informations small text-left">
+              <li>
+                <b>Email</b>: mchammer@gangsta.com
+              </li>
+              <li>
+                <b>Address</b>: Ghetto Blaster, 23 av.
+              </li>
+              <li>
+                <b>Phone</b>: You foolish chicken
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-8">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Messages
+          </div>
+          <div class="panel-body">
+            <ul class="messages">
+              <li class="message media">
+                <div class="message-header pull-left">
+                  <div class="user-avatar user-avatar-medium">
+                    <img src="../assets/images/avatar.png"/>
+                  </div>
+                </div>
+                <div class="message-content media-body">
+                  <p><b>MC Hammer</b> <small>- Yesterday, 8:01</small></p>
+                  <p>My-my-my-my music keeps me so hard makes me say oh my Lord
+                  Thank you for blessing me with a mind to rhyme and two hype feet</p>
+                </div>
+              <li>
+              <li class="message media">
+                <div class="message-header pull-left">
+                  <div class="user-avatar user-avatar-medium">
+                    <img src="../assets/images/avatar.png"/>
+                  </div>
+                </div>
+                <div class="message-content media-body">
+                  <p><b>MC Hammer</b> <small>- Yesterday, 8:01</small></p>
+                  <p>My-my-my-my music keeps me so hard makes me say oh my Lord
+                  Thank you for blessing me with a mind to rhyme and two hype feet</p>
+                </div>
+              <li>
+              <li class="message media">
+                <div class="message-header pull-left">
+                  <div class="user-avatar user-avatar-medium">
+                    <img src="../assets/images/avatar.png"/>
+                  </div>
+                </div>
+                <div class="message-content media-body">
+                  <p><b>MC Hammer</b> <small>- Yesterday, 8:01</small></p>
+                  <p>My-my-my-my music keeps me so hard makes me say oh my Lord
+                  Thank you for blessing me with a mind to rhyme and two hype feet</p>
+                </div>
+              <li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+</div><div class="codeBlock"><div class="highlight"><pre>    <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"row framework"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"user-profile panel panel-default text-center"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"user-avatar user-avatar-large"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../assets/images/avatar.png"</span><span class="nt">/&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h2&gt;&lt;b&gt;</span>MC Hammer<span class="nt">&lt;/b&gt;&lt;/h2&gt;</span>
+
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"user-informations small text-left"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;b&gt;</span>Email<span class="nt">&lt;/b&gt;</span>: mchammer@gangsta.com
+              <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;b&gt;</span>Address<span class="nt">&lt;/b&gt;</span>: Ghetto Blaster, 23 av.
+              <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;b&gt;</span>Phone<span class="nt">&lt;/b&gt;</span>: You foolish chicken
+              <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-8"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>
+            Messages
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"messages"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"message media"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message-header pull-left"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"user-avatar user-avatar-medium"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../assets/images/avatar.png"</span><span class="nt">/&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message-content media-body"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;p&gt;&lt;b&gt;</span>MC Hammer<span class="nt">&lt;/b&gt;</span> <span class="nt">&lt;small&gt;</span>- Yesterday, 8:01<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+                  <span class="nt">&lt;p&gt;</span>My-my-my-my music keeps me so hard makes me say oh my Lord
+                  Thank you for blessing me with a mind to rhyme and two hype feet<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"message media"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message-header pull-left"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"user-avatar user-avatar-medium"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../assets/images/avatar.png"</span><span class="nt">/&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message-content media-body"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;p&gt;&lt;b&gt;</span>MC Hammer<span class="nt">&lt;/b&gt;</span> <span class="nt">&lt;small&gt;</span>- Yesterday, 8:01<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+                  <span class="nt">&lt;p&gt;</span>My-my-my-my music keeps me so hard makes me say oh my Lord
+                  Thank you for blessing me with a mind to rhyme and two hype feet<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"message media"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message-header pull-left"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"user-avatar user-avatar-medium"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../assets/images/avatar.png"</span><span class="nt">/&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message-content media-body"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;p&gt;&lt;b&gt;</span>MC Hammer<span class="nt">&lt;/b&gt;</span> <span class="nt">&lt;small&gt;</span>- Yesterday, 8:01<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+                  <span class="nt">&lt;p&gt;</span>My-my-my-my music keeps me so hard makes me say oh my Lord
+                  Thank you for blessing me with a mind to rhyme and two hype feet<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/section&gt;</span>
+</pre></div></div></div><div class="cortana-content">
+<h1 id="05final">Final</h1>
+
+<p>On fait un peu de ménage, on remets tout ça dans l&#39;ordre
+  pour faire la version finale</p>
+</div><div class="codeBlock sassExample"><div class="highlight"><pre>    <span class="nt">small</span><span class="o">,</span>
+    <span class="nc">.u-small</span>
+      <span class="nl">font-size</span><span class="p">:</span> <span class="m">85%</span>
+
+    <span class="nc">.user-profile</span>
+      <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span>
+      <span class="nc">.user-avatar</span>
+        <span class="nl">margin-top</span><span class="p">:</span> <span class="nf">-</span><span class="p">(</span> <span class="nv">$size-avatar-large</span> <span class="o">/</span> <span class="m">2</span> <span class="p">)</span>
+
+    <span class="nc">.user-informations</span>
+      <span class="nl">text-align</span><span class="p">:</span> <span class="nb">left</span>
+
+    <span class="nc">.user-avatar-medium</span>
+      <span class="nt">img</span>
+        <span class="nd">+square</span><span class="p">(</span><span class="nv">$size-avatar-medium</span><span class="p">)</span>
+        <span class="nl">border-radius</span><span class="p">:</span> <span class="nv">$border-radius-base</span>
+
+    <span class="nc">.user-avatar-large</span>
+      <span class="nt">img</span>
+        <span class="nd">+square</span><span class="p">(</span><span class="nv">$size-avatar-large</span><span class="p">)</span>
+        <span class="nl">border-radius</span><span class="p">:</span> <span class="nv">$border-radius-large</span>
+</pre></div></div><div class="cortana-content"></div><div class="codeExample"><div class="exampleOutput">    <section class="final">
+      <div class="col-4">
+        <div class="user-profile panel">
+          <div class="user-avatar user-avatar-large">
+            <img src="../assets/images/avatar.png"/>
+          </div>
+          <div class="panel-body">
+            <h2>MC Hammer</h2>
+
+            <ul class="user-informations u-small">
+              <li>
+                <b>Email</b>: mchammer@gangsta.com
+              </li>
+              <li>
+                <b>Address</b>: Ghetto Blaster, 23 av.
+              </li>
+              <li>
+                <b>Phone</b>: You foolish chicken
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="panel">
+          <div class="panel-header">
+            Messages
+          </div>
+          <div class="panel-body">
+            <ul class="messages">
+              <li class="message u-media">
+                <div class="message-header u-pull-left">
+                  <div class="user-avatar user-avatar-medium">
+                    <img src="../assets/images/avatar.png"/>
+                  </div>
+                </div>
+                <div class="message-content u-media-body">
+                  <p><b>MC Hammer</b> <small>- Yesterday, 8:01</small></p>
+                  <p>My-my-my-my music keeps me so hard makes me say oh my Lord
+                  Thank you for blessing me with a mind to rhyme and two hype feet</p>
+                </div>
+              <li>
+              <li class="message u-media">
+                <div class="message-header u-pull-left">
+                  <div class="user-avatar user-avatar-medium">
+                    <img src="../assets/images/avatar.png"/>
+                  </div>
+                </div>
+                <div class="message-content u-media-body">
+                  <p><b>MC Hammer</b> <small>- Yesterday, 8:01</small></p>
+                  <p>My-my-my-my music keeps me so hard makes me say oh my Lord
+                  Thank you for blessing me with a mind to rhyme and two hype feet</p>
+                </div>
+              <li>
+              <li class="message u-media">
+                <div class="message-header u-pull-left">
+                  <div class="user-avatar user-avatar-medium">
+                    <img src="../assets/images/avatar.png"/>
+                  </div>
+                </div>
+                <div class="message-content u-media-body">
+                  <p><b>MC Hammer</b> <small>- Yesterday, 8:01</small></p>
+                  <p>My-my-my-my music keeps me so hard makes me say oh my Lord
+                  Thank you for blessing me with a mind to rhyme and two hype feet</p>
+                </div>
+              <li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+</div><div class="codeBlock"><div class="highlight"><pre>    <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"final"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"user-profile panel"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"user-avatar user-avatar-large"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../assets/images/avatar.png"</span><span class="nt">/&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h2&gt;</span>MC Hammer<span class="nt">&lt;/h2&gt;</span>
+
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"user-informations u-small"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;b&gt;</span>Email<span class="nt">&lt;/b&gt;</span>: mchammer@gangsta.com
+              <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;b&gt;</span>Address<span class="nt">&lt;/b&gt;</span>: Ghetto Blaster, 23 av.
+              <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;b&gt;</span>Phone<span class="nt">&lt;/b&gt;</span>: You foolish chicken
+              <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-8"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-header"</span><span class="nt">&gt;</span>
+            Messages
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"messages"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"message u-media"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message-header u-pull-left"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"user-avatar user-avatar-medium"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../assets/images/avatar.png"</span><span class="nt">/&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message-content u-media-body"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;p&gt;&lt;b&gt;</span>MC Hammer<span class="nt">&lt;/b&gt;</span> <span class="nt">&lt;small&gt;</span>- Yesterday, 8:01<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+                  <span class="nt">&lt;p&gt;</span>My-my-my-my music keeps me so hard makes me say oh my Lord
+                  Thank you for blessing me with a mind to rhyme and two hype feet<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"message u-media"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message-header u-pull-left"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"user-avatar user-avatar-medium"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../assets/images/avatar.png"</span><span class="nt">/&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message-content u-media-body"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;p&gt;&lt;b&gt;</span>MC Hammer<span class="nt">&lt;/b&gt;</span> <span class="nt">&lt;small&gt;</span>- Yesterday, 8:01<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+                  <span class="nt">&lt;p&gt;</span>My-my-my-my music keeps me so hard makes me say oh my Lord
+                  Thank you for blessing me with a mind to rhyme and two hype feet<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"message u-media"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message-header u-pull-left"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"user-avatar user-avatar-medium"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../assets/images/avatar.png"</span><span class="nt">/&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"message-content u-media-body"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;p&gt;&lt;b&gt;</span>MC Hammer<span class="nt">&lt;/b&gt;</span> <span class="nt">&lt;small&gt;</span>- Yesterday, 8:01<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+                  <span class="nt">&lt;p&gt;</span>My-my-my-my music keeps me so hard makes me say oh my Lord
+                  Thank you for blessing me with a mind to rhyme and two hype feet<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/section&gt;</span>
+</pre></div></div></div><div class="cortana-content">
+        </div>
+      </div>
+    </div>
+
+    <footer class="cortana-footer">
+      Build with love using Trulia's <a href="https://github.com/trulia/hologram">Hologram</a> and <a href="https://github.com/Yago/Cortana">Cortana</a> !
+    </footer>  
+  </div>
+
+  <script src="theme-build/js/vendors.min.js"></script>
+  <script type="text/javascript">
+    var jQuery_no_conflict = $.noConflict(true);
+  </script>
+  <script src="theme-build/js/main.js"></script>
+  <script type="text/javascript">
+    function TypeaheadCtrl($scope) {
+      $scope.selected = undefined;
+      $scope.searchData = 
+      [
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Start",
+              "breadcrumb": "CSS Styleguide - Examples > Start",
+              "path": "css_styleguide_-_examples.html#01start"
+              },
+            
+              
+              
+              {
+              "title": "Refactoring",
+              "breadcrumb": "CSS Styleguide - Examples > Refactoring",
+              "path": "css_styleguide_-_examples.html#02refactoring"
+              },
+            
+              
+              
+              {
+              "title": "Framework",
+              "breadcrumb": "CSS Styleguide - Examples > Framework",
+              "path": "css_styleguide_-_examples.html#04framework"
+              },
+            
+              
+              
+              {
+              "title": "Final",
+              "breadcrumb": "CSS Styleguide - Examples > Final",
+              "path": "css_styleguide_-_examples.html#05final"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Formattage",
+              "breadcrumb": "CSS Styleguide - Conventions > Formattage",
+              "path": "css_styleguide_-_conventions.html#a_formatting"
+              },
+            
+              
+              
+              {
+              "title": "Images",
+              "breadcrumb": "CSS Styleguide - Conventions > Images",
+              "path": "css_styleguide_-_conventions.html#b_images"
+              },
+            
+              
+              
+              {
+              "title": "ID et important",
+              "breadcrumb": "CSS Styleguide - Conventions > ID et important",
+              "path": "css_styleguide_-_conventions.html#c_ids"
+              },
+            
+              
+              
+              {
+              "title": "Variables",
+              "breadcrumb": "CSS Styleguide - Conventions > Variables",
+              "path": "css_styleguide_-_conventions.html#d_variables"
+              },
+            
+              
+              
+              {
+              "title": "Namespacing",
+              "breadcrumb": "CSS Styleguide - Conventions > Namespacing",
+              "path": "css_styleguide_-_conventions.html#e_namespacing"
+              },
+            
+              
+              
+              {
+              "title": "Block, selector",
+              "breadcrumb": "CSS Styleguide - Conventions > Block, selector",
+              "path": "css_styleguide_-_conventions.html#f_blocks"
+              },
+            
+              
+              
+              {
+              "title": "Extend",
+              "breadcrumb": "CSS Styleguide - Conventions > Extend",
+              "path": "css_styleguide_-_conventions.html#g_extend"
+              },
+            
+              
+              
+              {
+              "title": "Nesting",
+              "breadcrumb": "CSS Styleguide - Conventions > Nesting",
+              "path": "css_styleguide_-_conventions.html#h_nesting"
+              },
+            
+              
+              
+              {
+              "title": "Quotes",
+              "breadcrumb": "CSS Styleguide - Conventions > Quotes",
+              "path": "css_styleguide_-_conventions.html#i_quotes"
+              },
+            
+              
+              
+              {
+              "title": "Neat selectors",
+              "breadcrumb": "CSS Styleguide - Conventions > Neat selectors",
+              "path": "css_styleguide_-_conventions.html#j_selectors"
+              },
+            
+              
+              
+              {
+              "title": "Mixins & Helpers",
+              "breadcrumb": "CSS Styleguide - Conventions > Mixins & Helpers",
+              "path": "css_styleguide_-_conventions.html#k_helpers"
+              },
+            
+              
+              
+              {
+              "title": "Components",
+              "breadcrumb": "CSS Styleguide - Conventions > Components",
+              "path": "css_styleguide_-_conventions.html#l_components"
+              },
+            
+          
+        
+      {}];
+      $scope.onSelect = function ($item, $model, $label) {
+        window.location.replace($item.path);
+      };
+    }
+  </script>
+  <script type="text/ng-template" id="customTemplate.html">
+    <a href="{{match.model.path}}">
+      <p class="cortana-search-title">{{match.model.title}}</p>
+      <p class="cortana-search-path">{{match.model.breadcrumb}}</p>
+    </a>
+  </script>
+  
+    
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    
+      <script type="text/javascript" src="../assets/js/main.js"></script>
+    
+  
+  <!-- Source Components -->
+  
+</body>
+</html>

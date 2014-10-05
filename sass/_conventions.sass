@@ -1,0 +1,275 @@
+//doc
+  ---
+  title: Formattage
+  name: a_formatting
+  category: CSS Styleguide - Conventions
+  ---
+
+  Utilisez des tirets, partout !
+  Les images, classes, ids sont en lowercase et séparés par des tirets.
+
+  ```scss_example
+    // Bien
+    .user-profile {}
+    .post-header {}
+    #top-navigation {}
+
+    // Pas bien
+    .userProfile {}
+    .postheader {}
+    #top_navigation {}
+  ```
+
+//doc
+  ---
+  title: Images
+  name: b_images
+  category: CSS Styleguide - Conventions
+  ---
+  On nomme les images avec leur positionnement et leur utilisation ensuite
+
+  ```
+  // Bien
+  icon-home.png
+  bg-container.jpg
+  bg-home.jpg
+  sprite-top-navigation.png
+
+  // Pas bien
+  home-icon.png
+  container-background.jpg
+  bg.jpg
+  top-navigation.png
+  ```
+
+//doc
+  ---
+  title: ID et important
+  name: c_ids
+  category: CSS Styleguide - Conventions
+  ---
+  Jamais utiliser d'ID pour identifier
+  Trop d'importance et écrase le style. Idem pour !important.
+
+//doc
+  ---
+  title: Variables
+  name: d_variables
+  category: CSS Styleguide - Conventions
+  ---
+
+  On met des variables pour les font-sizes, font-weights, couleurs etc..
+  On débute par la propriété variabilisé, on continue avec sa spécificité.
+  Les couleurs sont exprimés en rgb, pas de hex ou rsl
+
+  ```scss_example
+  $font-size-small: 12px
+  $font-size-base: 14px
+  $font-size-large: 22px
+
+  $color-blue: rgb(122, 245, 233)
+  $color-red: rgb(21,122,245)
+  ```
+
+//doc
+  ---
+  title: Namespacing
+  name: e_namespacing
+  category: CSS Styleguide - Conventions
+  ---
+
+  Du namespacing pour faciliter la lecture et la réutilisation
+  Il est fait au niveau fonctionnel ( pas au niveau de la page ).
+  On commence avec le composant et on le fait suivre avec la partie spécifique.
+
+  ```scss_example
+  // Pas bien
+  .nav,
+  .home-nav,
+  .profile-nav,
+
+  // Bien
+  .nav,
+  .nav-bar,
+  .nav-list
+  ```
+
+//doc
+  ---
+  title: Block, selector
+  name: f_blocks
+  category: CSS Styleguide - Conventions
+  ---
+
+  À la ligne pour chaque nouveau sélecteur
+  Chaque bloc est séparé par une ligne
+
+  ```scss_example
+  // Pas bien
+  .content, .content-edit {
+    ...
+  }
+  .content-critical {
+    ...
+  }
+
+  // Bien
+  .content,
+  .content-edit {
+    …
+  }
+
+  .content-critical {
+    ...
+  }
+  ```
+
+//doc
+  ---
+  title: Extend
+  name: g_extend
+  category: CSS Styleguide - Conventions
+  ---
+
+  Pas d'utilisation des extend des préprocesseurs
+  Cela va étendre le code css d'un autre composant et le dupliquer.
+  Plutôt, créer une autre classe pour modifier la première
+
+//doc
+  ---
+  title: Nesting
+  name: h_nesting
+  category: CSS Styleguide - Conventions
+  ---
+
+  Un niveau de nesting maximum pour garder en lisibilité
+  Éviter le nesting permet de mieux se rendre compte de l'impact sur les
+  performances des sélecteurs.
+
+  ```scss_example
+  // Pas bien
+  .list-btn {
+    .list-btn-inner {
+      .btn {
+        background: red;
+      }
+      .btn:hover {
+        .opacity(.4);
+      }
+    }
+  }
+
+  // Bien
+  .list-btn .btn-inner {
+    background: red;
+
+    &hover {
+      .opacity(.4);
+    }
+  }
+  ```
+
+//doc
+  ---
+  title: Quotes
+  name: i_quotes
+  category: CSS Styleguide - Conventions
+  ---
+
+  Quotes everywhere
+  Même si le css est permissif, on met des quotes partout pour mieux identifier
+  les URLs
+
+  ```scss_example
+  // Bien
+  background-image: url("/img/you.jpg");
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+
+  // Pas bien
+  background-image: url(/img/you.jpg);
+  font-family: Helvetica Neue Light, Helvetica Neue, Helvetica, Arial;
+  ```
+
+//doc
+  ---
+  title: Neat selectors
+  name: j_selectors
+  category: CSS Styleguide - Conventions
+  ---
+
+  Aller à l'essentiel
+  Ne pas faire des sélecteurs à rallonge, aller droit au but.
+
+  ```scss_example
+  // Pas bien
+  ul.user-list li span a:hover { color: red; }
+
+  // Bien
+  .user-list a:hover { color: red; }
+  ```
+
+//doc
+  ---
+  title: Mixins & Helpers
+  name: k_helpers
+  category: CSS Styleguide - Conventions
+  ---
+
+  Utiliser des mixins pour les prefixes, des helpers pour le reste
+  Les mixins permettent de générer les vendors préfixes et de les faire
+  évoluer avec le meilleur support des navigateurs dans le futur.
+
+  ```scss_example
+  .user-page-avatar {
+  .transition(width .2s ease-in);
+  }
+
+  .transition(@transition) {
+    -webkit-transition: @transition;
+       -moz-transition: @transition;
+        -ms-transition: @transition;
+         -o-transition: @transition;
+            transition: @transition;
+  }
+  ```
+
+  Les mixins comme helpers font faire beaucoup de code redondant. On
+  préfèrera faire des class spécifiques d'helpers
+
+  ```scss_example
+  .u-pull-left {
+    float: left !important;
+  }
+
+  .u-text-left {
+    text-align: left !important;
+  }
+  ```
+
+//doc
+  ---
+  title: Components
+  name: l_components
+  category: CSS Styleguide - Conventions
+  ---
+
+  Avoir des composants pour pouvoir les étendre et les faire varier.
+  Ils sont proches du fonctionnel et sont comme des objets imbriqués
+  qui affinent la sélection du style et évite le nesting.
+
+  Syntaxe : componentName-descendantName
+
+  ```none
+    <article class="tweet">
+      <header class="tweet-header">
+        <img class="tweet-avatar" src="{$src}" alt="{$alt}">
+        …
+      </header>
+      <div class="tweet-body">
+        …
+      </div>
+    </article>
+  ```
+
+ul
+  list-style: none

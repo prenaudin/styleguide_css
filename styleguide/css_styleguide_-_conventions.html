@@ -1,0 +1,517 @@
+
+<!DOCTYPE html>
+<html ng-app="cortana">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CSS Styleguide - Conventions</title>
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="./theme-build/css/vendors.css">
+    <link rel="stylesheet" href="./theme-build/css/cortana.css">
+
+    <!-- Source CSS -->
+    
+      
+        <link rel="stylesheet" href="../assets/css/vendors.css">
+      
+        <link rel="stylesheet" href="../assets/css/styles.css">
+      
+    
+
+    <!--[if lt IE 9]>
+      <script src="theme-build/polyfill/html5shiv.js"></script>
+      <script src="theme-build/polyfill/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+  <body class="cortana-body"  ng-controller="MainController">
+
+    <div class="sb-slidebar sb-left cortana-sidenav sb-style-push">
+
+      
+      
+        
+        
+          
+        
+      
+        
+        
+      
+
+      <nav class="cortana-nav">
+        <ul>
+          
+            <li><a href="index.html">Home</a></li>
+          
+        </ul>
+        
+          <h3>CSS Styleguide</h3>
+          <ul>
+          
+            
+              
+              
+                <li><a href="css_styleguide_-_examples.html">Examples</a></li>
+              
+            
+          
+            
+              
+              
+                <li><a class="active" href="css_styleguide_-_conventions.html">Conventions</a></li>
+              
+            
+          
+          </ul>
+        
+      </nav>
+    </div>
+
+    <header class="cortana-header sb-slide">
+      
+        <h1>Conventions</h1>
+      
+      <div id="open-left" class="cortana-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="cortana-search-wrapper" ng-controller="TypeaheadCtrl">
+        <input id="cortana-search" type="text" class="form-control cortana-search" ng-model="customSelected" placeholder="Search" typeahead="data as data.title for data in searchData | filter:{title:$viewValue}" typeahead-template-url="customTemplate.html" class="form-control" typeahead-on-select="onSelect($item, $model, $label)">
+      </div>
+    </header>
+
+    <div id="sb-site">
+
+      <div class="cortana-container">
+
+        <nav id="cortana-inside-nav" class="cortana-inside-nav" bs-affix>
+          <ul bs-scrollspy-list data-offset="-30">
+            
+              
+                <li><a href="#a_formatting">Formattage</a></li>
+              
+            
+              
+                <li><a href="#b_images">Images</a></li>
+              
+            
+              
+                <li><a href="#c_ids">ID et important</a></li>
+              
+            
+              
+                <li><a href="#d_variables">Variables</a></li>
+              
+            
+              
+                <li><a href="#e_namespacing">Namespacing</a></li>
+              
+            
+              
+                <li><a href="#f_blocks">Block, selector</a></li>
+              
+            
+              
+                <li><a href="#g_extend">Extend</a></li>
+              
+            
+              
+                <li><a href="#h_nesting">Nesting</a></li>
+              
+            
+              
+                <li><a href="#i_quotes">Quotes</a></li>
+              
+            
+              
+                <li><a href="#j_selectors">Neat selectors</a></li>
+              
+            
+              
+                <li><a href="#k_helpers">Mixins & Helpers</a></li>
+              
+            
+              
+                <li><a href="#l_components">Components</a></li>
+              
+            
+          </ul>
+        </nav>
+
+        <div class="cortana-content-wrapper clearfix">
+          <div class="cortana-content">
+
+
+
+<h1 id="a_formatting">Formattage</h1>
+
+<p>Utilisez des tirets, partout !
+  Les images, classes, ids sont en lowercase et séparés par des tirets.</p>
+</div><div class="codeBlock scssExample"><div class="highlight"><pre>    <span class="c1">// Bien
+</span>    <span class="nc">.user-profile</span> <span class="p">{}</span>
+    <span class="nc">.post-header</span> <span class="p">{}</span>
+    <span class="nn">#top-navigation</span> <span class="p">{}</span>
+
+    <span class="c1">// Pas bien
+</span>    <span class="nc">.userProfile</span> <span class="p">{}</span>
+    <span class="nc">.postheader</span> <span class="p">{}</span>
+    <span class="nn">#top_navigation</span> <span class="p">{}</span>
+</pre></div></div><div class="cortana-content">
+<h1 id="b_images">Images</h1>
+
+<p>On nomme les images avec leur positionnement et leur utilisation ensuite</p>
+</div><div class="codeBlock"><div class="highlight"><pre>  // Bien
+  icon-home.png
+  bg-container.jpg
+  bg-home.jpg
+  sprite-top-navigation.png
+
+  // Pas bien
+  home-icon.png
+  container-background.jpg
+  bg.jpg
+  top-navigation.png
+</pre></div></div><div class="cortana-content">
+<h1 id="c_ids">ID et important</h1>
+
+<p>Jamais utiliser d&#39;ID pour identifier
+  Trop d&#39;importance et écrase le style. Idem pour !important.</p>
+
+<h1 id="d_variables">Variables</h1>
+
+<p>On met des variables pour les font-sizes, font-weights, couleurs etc..
+  On débute par la propriété variabilisé, on continue avec sa spécificité.
+  Les couleurs sont exprimés en rgb, pas de hex ou rsl</p>
+</div><div class="codeBlock scssExample"><div class="highlight"><pre>  <span class="nv">$font-size-small</span><span class="p">:</span> <span class="m">12px</span>
+  <span class="nv">$font-size-base</span><span class="o">:</span> <span class="m">14px</span>
+  <span class="nv">$font-size-large</span><span class="o">:</span> <span class="m">22px</span>
+
+  <span class="nv">$color-blue</span><span class="o">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="m">122</span><span class="o">,</span> <span class="m">245</span><span class="o">,</span> <span class="m">233</span><span class="p">)</span>
+  <span class="nv">$color-red</span><span class="o">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="m">21</span><span class="o">,</span><span class="m">122</span><span class="o">,</span><span class="m">245</span><span class="p">)</span>
+</pre></div></div><div class="cortana-content">
+<h1 id="e_namespacing">Namespacing</h1>
+
+<p>Du namespacing pour faciliter la lecture et la réutilisation
+  Il est fait au niveau fonctionnel ( pas au niveau de la page ).
+  On commence avec le composant et on le fait suivre avec la partie spécifique.</p>
+</div><div class="codeBlock scssExample"><div class="highlight"><pre>  <span class="c1">// Pas bien
+</span>  <span class="nc">.nav</span><span class="o">,</span>
+  <span class="nc">.home-nav</span><span class="o">,</span>
+  <span class="nc">.profile-nav</span><span class="o">,</span>
+
+  <span class="o">//</span> <span class="nt">Bien</span>
+  <span class="nc">.nav</span><span class="o">,</span>
+  <span class="nc">.nav-bar</span><span class="o">,</span>
+  <span class="nc">.nav-list</span>
+</pre></div></div><div class="cortana-content">
+<h1 id="f_blocks">Block, selector</h1>
+
+<p>À la ligne pour chaque nouveau sélecteur
+  Chaque bloc est séparé par une ligne</p>
+</div><div class="codeBlock scssExample"><div class="highlight"><pre>  <span class="c1">// Pas bien
+</span>  <span class="nc">.content</span><span class="o">,</span> <span class="nc">.content-edit</span> <span class="p">{</span>
+    <span class="nc">...</span>
+  <span class="p">}</span>
+  <span class="nc">.content-critical</span> <span class="p">{</span>
+    <span class="nc">...</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Bien
+</span>  <span class="nc">.content</span><span class="o">,</span>
+  <span class="nc">.content-edit</span> <span class="p">{</span>
+    <span class="err">…</span>
+  <span class="p">}</span>
+
+  <span class="nc">.content-critical</span> <span class="p">{</span>
+    <span class="nc">...</span>
+  <span class="p">}</span>
+</pre></div></div><div class="cortana-content">
+<h1 id="g_extend">Extend</h1>
+
+<p>Pas d&#39;utilisation des extend des préprocesseurs
+  Cela va étendre le code css d&#39;un autre composant et le dupliquer.
+  Plutôt, créer une autre classe pour modifier la première</p>
+
+<h1 id="h_nesting">Nesting</h1>
+
+<p>Un niveau de nesting maximum pour garder en lisibilité
+  Éviter le nesting permet de mieux se rendre compte de l&#39;impact sur les
+  performances des sélecteurs.</p>
+</div><div class="codeBlock scssExample"><div class="highlight"><pre>  <span class="c1">// Pas bien
+</span>  <span class="nc">.list-btn</span> <span class="p">{</span>
+    <span class="nc">.list-btn-inner</span> <span class="p">{</span>
+      <span class="nc">.btn</span> <span class="p">{</span>
+        <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nc">.btn</span><span class="nd">:hover</span> <span class="p">{</span>
+        <span class="nc">.opacity</span><span class="o">(</span><span class="nc">.4</span><span class="o">)</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Bien
+</span>  <span class="nc">.list-btn</span> <span class="nc">.btn-inner</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+
+    <span class="k">&amp;</span><span class="nt">hover</span> <span class="p">{</span>
+      <span class="nc">.opacity</span><span class="o">(</span><span class="nc">.4</span><span class="o">)</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></div></div><div class="cortana-content">
+<h1 id="i_quotes">Quotes</h1>
+
+<p>Quotes everywhere
+  Même si le css est permissif, on met des quotes partout pour mieux identifier
+  les URLs</p>
+</div><div class="codeBlock scssExample"><div class="highlight"><pre>  <span class="c1">// Bien
+</span>  <span class="nl">background-image</span><span class="p">:</span> <span class="sx">url("/img/you.jpg")</span><span class="p">;</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">"Helvetica Neue Light"</span><span class="o">,</span> <span class="s2">"Helvetica Neue"</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="n">Arial</span><span class="p">;</span>
+
+  <span class="c1">// Pas bien
+</span>  <span class="nl">background-image</span><span class="p">:</span> <span class="sx">url(/img/you.jpg)</span><span class="p">;</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Helvetica</span> <span class="n">Neue</span> <span class="n">Light</span><span class="o">,</span> <span class="n">Helvetica</span> <span class="n">Neue</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="n">Arial</span><span class="p">;</span>
+</pre></div></div><div class="cortana-content">
+<h1 id="j_selectors">Neat selectors</h1>
+
+<p>Aller à l&#39;essentiel
+  Ne pas faire des sélecteurs à rallonge, aller droit au but.</p>
+</div><div class="codeBlock scssExample"><div class="highlight"><pre>  <span class="c1">// Pas bien
+</span>  <span class="nt">ul</span><span class="nc">.user-list</span> <span class="nt">li</span> <span class="nt">span</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span> <span class="p">}</span>
+
+  <span class="c1">// Bien
+</span>  <span class="nc">.user-list</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span> <span class="p">}</span>
+</pre></div></div><div class="cortana-content">
+<h1 id="k_helpers">Mixins & Helpers</h1>
+
+<p>Utiliser des mixins pour les prefixes, des helpers pour le reste
+  Les mixins permettent de générer les vendors préfixes et de les faire
+  évoluer avec le meilleur support des navigateurs dans le futur.</p>
+</div><div class="codeBlock scssExample"><div class="highlight"><pre>  <span class="nc">.user-page-avatar</span> <span class="p">{</span>
+  <span class="nc">.transition</span><span class="o">(</span><span class="nt">width</span> <span class="nc">.2s</span> <span class="nt">ease-in</span><span class="o">)</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nc">.transition</span><span class="o">(@</span><span class="nt">transition</span><span class="o">)</span> <span class="p">{</span>
+    <span class="na">-webkit-transition</span><span class="p">:</span> <span class="o">@</span><span class="n">transition</span><span class="p">;</span>
+       <span class="na">-moz-transition</span><span class="p">:</span> <span class="o">@</span><span class="n">transition</span><span class="p">;</span>
+        <span class="na">-ms-transition</span><span class="p">:</span> <span class="o">@</span><span class="n">transition</span><span class="p">;</span>
+         <span class="na">-o-transition</span><span class="p">:</span> <span class="o">@</span><span class="n">transition</span><span class="p">;</span>
+            <span class="nl">transition</span><span class="p">:</span> <span class="o">@</span><span class="n">transition</span><span class="p">;</span>
+  <span class="p">}</span>
+</pre></div></div><div class="cortana-content">
+<p>Les mixins comme helpers font faire beaucoup de code redondant. On
+  préfèrera faire des class spécifiques d&#39;helpers</p>
+</div><div class="codeBlock scssExample"><div class="highlight"><pre>  <span class="nc">.u-pull-left</span> <span class="p">{</span>
+    <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nc">.u-text-left</span> <span class="p">{</span>
+    <span class="nl">text-align</span><span class="p">:</span> <span class="nb">left</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+  <span class="p">}</span>
+</pre></div></div><div class="cortana-content">
+<h1 id="l_components">Components</h1>
+
+<p>Avoir des composants pour pouvoir les étendre et les faire varier.
+  Ils sont proches du fonctionnel et sont comme des objets imbriqués
+  qui affinent la sélection du style et évite le nesting.</p>
+
+<p>Syntaxe : componentName-descendantName</p>
+</div><div class="codeBlock"><div class="highlight"><pre>    &lt;article class="tweet"&gt;
+      &lt;header class="tweet-header"&gt;
+        &lt;img class="tweet-avatar" src="{$src}" alt="{$alt}"&gt;
+        …
+      &lt;/header&gt;
+      &lt;div class="tweet-body"&gt;
+        …
+      &lt;/div&gt;
+    &lt;/article&gt;
+</pre></div></div><div class="cortana-content">
+        </div>
+      </div>
+    </div>
+
+    <footer class="cortana-footer">
+      Build with love using Trulia's <a href="https://github.com/trulia/hologram">Hologram</a> and <a href="https://github.com/Yago/Cortana">Cortana</a> !
+    </footer>  
+  </div>
+
+  <script src="theme-build/js/vendors.min.js"></script>
+  <script type="text/javascript">
+    var jQuery_no_conflict = $.noConflict(true);
+  </script>
+  <script src="theme-build/js/main.js"></script>
+  <script type="text/javascript">
+    function TypeaheadCtrl($scope) {
+      $scope.selected = undefined;
+      $scope.searchData = 
+      [
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Start",
+              "breadcrumb": "CSS Styleguide - Examples > Start",
+              "path": "css_styleguide_-_examples.html#01start"
+              },
+            
+              
+              
+              {
+              "title": "Refactoring",
+              "breadcrumb": "CSS Styleguide - Examples > Refactoring",
+              "path": "css_styleguide_-_examples.html#02refactoring"
+              },
+            
+              
+              
+              {
+              "title": "Framework",
+              "breadcrumb": "CSS Styleguide - Examples > Framework",
+              "path": "css_styleguide_-_examples.html#04framework"
+              },
+            
+              
+              
+              {
+              "title": "Final",
+              "breadcrumb": "CSS Styleguide - Examples > Final",
+              "path": "css_styleguide_-_examples.html#05final"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Formattage",
+              "breadcrumb": "CSS Styleguide - Conventions > Formattage",
+              "path": "css_styleguide_-_conventions.html#a_formatting"
+              },
+            
+              
+              
+              {
+              "title": "Images",
+              "breadcrumb": "CSS Styleguide - Conventions > Images",
+              "path": "css_styleguide_-_conventions.html#b_images"
+              },
+            
+              
+              
+              {
+              "title": "ID et important",
+              "breadcrumb": "CSS Styleguide - Conventions > ID et important",
+              "path": "css_styleguide_-_conventions.html#c_ids"
+              },
+            
+              
+              
+              {
+              "title": "Variables",
+              "breadcrumb": "CSS Styleguide - Conventions > Variables",
+              "path": "css_styleguide_-_conventions.html#d_variables"
+              },
+            
+              
+              
+              {
+              "title": "Namespacing",
+              "breadcrumb": "CSS Styleguide - Conventions > Namespacing",
+              "path": "css_styleguide_-_conventions.html#e_namespacing"
+              },
+            
+              
+              
+              {
+              "title": "Block, selector",
+              "breadcrumb": "CSS Styleguide - Conventions > Block, selector",
+              "path": "css_styleguide_-_conventions.html#f_blocks"
+              },
+            
+              
+              
+              {
+              "title": "Extend",
+              "breadcrumb": "CSS Styleguide - Conventions > Extend",
+              "path": "css_styleguide_-_conventions.html#g_extend"
+              },
+            
+              
+              
+              {
+              "title": "Nesting",
+              "breadcrumb": "CSS Styleguide - Conventions > Nesting",
+              "path": "css_styleguide_-_conventions.html#h_nesting"
+              },
+            
+              
+              
+              {
+              "title": "Quotes",
+              "breadcrumb": "CSS Styleguide - Conventions > Quotes",
+              "path": "css_styleguide_-_conventions.html#i_quotes"
+              },
+            
+              
+              
+              {
+              "title": "Neat selectors",
+              "breadcrumb": "CSS Styleguide - Conventions > Neat selectors",
+              "path": "css_styleguide_-_conventions.html#j_selectors"
+              },
+            
+              
+              
+              {
+              "title": "Mixins & Helpers",
+              "breadcrumb": "CSS Styleguide - Conventions > Mixins & Helpers",
+              "path": "css_styleguide_-_conventions.html#k_helpers"
+              },
+            
+              
+              
+              {
+              "title": "Components",
+              "breadcrumb": "CSS Styleguide - Conventions > Components",
+              "path": "css_styleguide_-_conventions.html#l_components"
+              },
+            
+          
+        
+      {}];
+      $scope.onSelect = function ($item, $model, $label) {
+        window.location.replace($item.path);
+      };
+    }
+  </script>
+  <script type="text/ng-template" id="customTemplate.html">
+    <a href="{{match.model.path}}">
+      <p class="cortana-search-title">{{match.model.title}}</p>
+      <p class="cortana-search-path">{{match.model.breadcrumb}}</p>
+    </a>
+  </script>
+  
+    
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    
+      <script type="text/javascript" src="../assets/js/main.js"></script>
+    
+  
+  <!-- Source Components -->
+  
+</body>
+</html>

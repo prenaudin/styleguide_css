@@ -14,6 +14,10 @@ class Cortanamarkdownrenderer < Redcarpet::Render::HTML
         # with `sass_example`, just the rendered the sass preformated
         lexer = Rouge::Lexer.find('sass')
         '</div><div class="codeBlock sassExample"><div class="highlight"><pre>' + formatter.format(lexer.lex(code)) + '</pre></div></div><div class="cortana-content">'
+      elsif language.include?('scss')
+        # with `sass_example`, just the rendered the sass preformated
+        lexer = Rouge::Lexer.find('scss')
+        '</div><div class="codeBlock scssExample"><div class="highlight"><pre>' + formatter.format(lexer.lex(code)) + '</pre></div></div><div class="cortana-content">'
       else
         lexer = Rouge::Lexer.find(get_lexer(language))
         '</div><div class="codeExample">' + '<div class="exampleOutput">' + render_html(code, language) + '</div>' + '<div class="codeBlock"><div class="highlight"><pre>' + formatter.format(lexer.lex(code)) + '</pre></div></div>' + '</div><div class="cortana-content">'
