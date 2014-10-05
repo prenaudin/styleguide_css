@@ -1,0 +1,299 @@
+/* line 7, ../../sass/vendors.scss */
+.cortana-content code, .cortana-content pre {
+  border: 1px solid #333333 !important;
+  background: white !important;
+  color: #333333 !important; }
+
+/* line 13, ../../sass/vendors.scss */
+.codeBlock {
+  background: white !important;
+  color: #333333 !important;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc; }
+  /* line 19, ../../sass/vendors.scss */
+  .codeBlock .highlight {
+    background: white !important; }
+  /* line 22, ../../sass/vendors.scss */
+  .codeBlock pre {
+    background: white !important;
+    color: #333333 !important;
+    border: 1px solid white !important; }
+  /* line 28, ../../sass/vendors.scss */
+  .codeBlock.sassExample:after {
+    content: 'SASS' !important; }
+
+/* line 33, ../../sass/vendors.scss */
+.cortana-content ul {
+  font-family: "Open Sans",sans-serif !important;
+  font-size: 16px !important; }
+
+/* line 39, ../../sass/vendors.scss */
+.codeBlock {
+  /* Comment */
+  /* Error */
+  /* Keyword */
+  /* Operator */
+  /* Comment.Multiline */
+  /* Comment.Preproc */
+  /* Comment.Single */
+  /* Comment.Special */
+  /* Generic.Deleted */
+  /* Generic.Emph */
+  /* Generic.Error */
+  /* Generic.Heading */
+  /* Generic.Inserted */
+  /* Generic.Output */
+  /* Generic.Prompt */
+  /* Generic.Strong */
+  /* Generic.Subheading */
+  /* Generic.Traceback */
+  /* Keyword.Constant */
+  /* Keyword.Declaration */
+  /* Keyword.Namespace */
+  /* Keyword.Pseudo */
+  /* Keyword.Reserved */
+  /* Keyword.Type */
+  /* Literal.Number */
+  /* Literal.String */
+  /* Name.Attribute */
+  /* Name.Builtin */
+  /* Name.Class */
+  /* Name.Constant */
+  /* Name.Decorator */
+  /* Name.Entity */
+  /* Name.Exception */
+  /* Name.Function */
+  /* Name.Label */
+  /* Name.Namespace */
+  /* Name.Tag */
+  /* Name.Variable */
+  /* Operator.Word */
+  /* Text.Whitespace */
+  /* Literal.Number.Float */
+  /* Literal.Number.Hex */
+  /* Literal.Number.Integer */
+  /* Literal.Number.Oct */
+  /* Literal.String.Backtick */
+  /* Literal.String.Char */
+  /* Literal.String.Doc */
+  /* Literal.String.Double */
+  /* Literal.String.Escape */
+  /* Literal.String.Heredoc */
+  /* Literal.String.Interpol */
+  /* Literal.String.Other */
+  /* Literal.String.Regex */
+  /* Literal.String.Single */
+  /* Literal.String.Symbol */
+  /* Name.Builtin.Pseudo */
+  /* Name.Variable.Class */
+  /* Name.Variable.Global */
+  /* Name.Variable.Instance */
+  /* Literal.Number.Integer.Long */ }
+  /* line 40, ../../sass/vendors.scss */
+  .codeBlock hll {
+    background-color: #ffffcc; }
+  /* line 41, ../../sass/vendors.scss */
+  .codeBlock .c {
+    color: #999988;
+    font-style: italic; }
+  /* line 42, ../../sass/vendors.scss */
+  .codeBlock .err {
+    color: #a61717;
+    background-color: #e3d2d2; }
+  /* line 43, ../../sass/vendors.scss */
+  .codeBlock .k {
+    color: #000000;
+    font-weight: bold; }
+  /* line 44, ../../sass/vendors.scss */
+  .codeBlock .o {
+    color: #000000;
+    font-weight: bold; }
+  /* line 45, ../../sass/vendors.scss */
+  .codeBlock .cm {
+    color: #999988;
+    font-style: italic; }
+  /* line 46, ../../sass/vendors.scss */
+  .codeBlock .cp {
+    color: #999999;
+    font-weight: bold;
+    font-style: italic; }
+  /* line 47, ../../sass/vendors.scss */
+  .codeBlock .c1 {
+    color: #999988;
+    font-style: italic; }
+  /* line 48, ../../sass/vendors.scss */
+  .codeBlock .cs {
+    color: #999999;
+    font-weight: bold;
+    font-style: italic; }
+  /* line 49, ../../sass/vendors.scss */
+  .codeBlock .gd {
+    color: #000000;
+    background-color: #ffdddd; }
+  /* line 50, ../../sass/vendors.scss */
+  .codeBlock .ge {
+    color: #000000;
+    font-style: italic; }
+  /* line 51, ../../sass/vendors.scss */
+  .codeBlock .gr {
+    color: #aa0000; }
+  /* line 52, ../../sass/vendors.scss */
+  .codeBlock .gh {
+    color: #999999; }
+  /* line 53, ../../sass/vendors.scss */
+  .codeBlock .gi {
+    color: #000000;
+    background-color: #ddffdd; }
+  /* line 54, ../../sass/vendors.scss */
+  .codeBlock .go {
+    color: #888888; }
+  /* line 55, ../../sass/vendors.scss */
+  .codeBlock .gp {
+    color: #555555; }
+  /* line 56, ../../sass/vendors.scss */
+  .codeBlock .gs {
+    font-weight: bold; }
+  /* line 57, ../../sass/vendors.scss */
+  .codeBlock .gu {
+    color: #aaaaaa; }
+  /* line 58, ../../sass/vendors.scss */
+  .codeBlock .gt {
+    color: #aa0000; }
+  /* line 59, ../../sass/vendors.scss */
+  .codeBlock .kc {
+    color: #000000;
+    font-weight: bold; }
+  /* line 60, ../../sass/vendors.scss */
+  .codeBlock .kd {
+    color: #000000;
+    font-weight: bold; }
+  /* line 61, ../../sass/vendors.scss */
+  .codeBlock .kn {
+    color: #000000;
+    font-weight: bold; }
+  /* line 62, ../../sass/vendors.scss */
+  .codeBlock .kp {
+    color: #000000;
+    font-weight: bold; }
+  /* line 63, ../../sass/vendors.scss */
+  .codeBlock .kr {
+    color: #000000;
+    font-weight: bold; }
+  /* line 64, ../../sass/vendors.scss */
+  .codeBlock .kt {
+    color: #445588;
+    font-weight: bold; }
+  /* line 65, ../../sass/vendors.scss */
+  .codeBlock .m {
+    color: #009999; }
+  /* line 66, ../../sass/vendors.scss */
+  .codeBlock .s {
+    color: #d01040; }
+  /* line 67, ../../sass/vendors.scss */
+  .codeBlock .na {
+    color: teal; }
+  /* line 68, ../../sass/vendors.scss */
+  .codeBlock .nb {
+    color: #0086b3; }
+  /* line 69, ../../sass/vendors.scss */
+  .codeBlock .nc {
+    color: #445588;
+    font-weight: bold; }
+  /* line 70, ../../sass/vendors.scss */
+  .codeBlock .no {
+    color: teal; }
+  /* line 71, ../../sass/vendors.scss */
+  .codeBlock .nd {
+    color: #3c5d5d;
+    font-weight: bold; }
+  /* line 72, ../../sass/vendors.scss */
+  .codeBlock .ni {
+    color: purple; }
+  /* line 73, ../../sass/vendors.scss */
+  .codeBlock .ne {
+    color: #990000;
+    font-weight: bold; }
+  /* line 74, ../../sass/vendors.scss */
+  .codeBlock .nf {
+    color: #990000;
+    font-weight: bold; }
+  /* line 75, ../../sass/vendors.scss */
+  .codeBlock .nl {
+    color: #990000;
+    font-weight: bold; }
+  /* line 76, ../../sass/vendors.scss */
+  .codeBlock .nn {
+    color: #555555; }
+  /* line 77, ../../sass/vendors.scss */
+  .codeBlock .nt {
+    color: navy; }
+  /* line 78, ../../sass/vendors.scss */
+  .codeBlock .nv {
+    color: teal; }
+  /* line 79, ../../sass/vendors.scss */
+  .codeBlock .ow {
+    color: #000000;
+    font-weight: bold; }
+  /* line 80, ../../sass/vendors.scss */
+  .codeBlock .w {
+    color: #bbbbbb; }
+  /* line 81, ../../sass/vendors.scss */
+  .codeBlock .mf {
+    color: #009999; }
+  /* line 82, ../../sass/vendors.scss */
+  .codeBlock .mh {
+    color: #009999; }
+  /* line 83, ../../sass/vendors.scss */
+  .codeBlock .mi {
+    color: #009999; }
+  /* line 84, ../../sass/vendors.scss */
+  .codeBlock .mo {
+    color: #009999; }
+  /* line 85, ../../sass/vendors.scss */
+  .codeBlock .sb {
+    color: #d01040; }
+  /* line 86, ../../sass/vendors.scss */
+  .codeBlock .sc {
+    color: #d01040; }
+  /* line 87, ../../sass/vendors.scss */
+  .codeBlock .sd {
+    color: #d01040; }
+  /* line 88, ../../sass/vendors.scss */
+  .codeBlock .s2 {
+    color: #d01040; }
+  /* line 89, ../../sass/vendors.scss */
+  .codeBlock .se {
+    color: #d01040; }
+  /* line 90, ../../sass/vendors.scss */
+  .codeBlock .sh {
+    color: #d01040; }
+  /* line 91, ../../sass/vendors.scss */
+  .codeBlock .si {
+    color: #d01040; }
+  /* line 92, ../../sass/vendors.scss */
+  .codeBlock .sx {
+    color: #d01040; }
+  /* line 93, ../../sass/vendors.scss */
+  .codeBlock .sr {
+    color: #009926; }
+  /* line 94, ../../sass/vendors.scss */
+  .codeBlock .s1 {
+    color: #d01040; }
+  /* line 95, ../../sass/vendors.scss */
+  .codeBlock .ss {
+    color: #990073; }
+  /* line 96, ../../sass/vendors.scss */
+  .codeBlock .bp {
+    color: #999999; }
+  /* line 97, ../../sass/vendors.scss */
+  .codeBlock .vc {
+    color: teal; }
+  /* line 98, ../../sass/vendors.scss */
+  .codeBlock .vg {
+    color: teal; }
+  /* line 99, ../../sass/vendors.scss */
+  .codeBlock .vi {
+    color: teal; }
+  /* line 100, ../../sass/vendors.scss */
+  .codeBlock .il {
+    color: #009999; }

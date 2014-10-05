@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html ng-app="cortana">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="./theme-build/css/vendors.css">
+    <link rel="stylesheet" href="./theme-build/css/cortana.css">
+
+    <!-- Source CSS -->
+    
+      
+        <link rel="stylesheet" href="../assets/css/vendors.css">
+      
+        <link rel="stylesheet" href="../assets/css/styles.css">
+      
+    
+
+    <!--[if lt IE 9]>
+      <script src="theme-build/polyfill/html5shiv.js"></script>
+      <script src="theme-build/polyfill/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+  <body class="cortana-body"  ng-controller="MainController">
+
+    <div class="sb-slidebar sb-left cortana-sidenav sb-style-push">
+
+      
+      
+        
+        
+          
+        
+      
+
+      <nav class="cortana-nav">
+        <ul>
+          
+            <li><a href="index.html">Home</a></li>
+          
+        </ul>
+        
+          <h3>Examples</h3>
+          <ul>
+          
+            
+              
+              
+                <li><a href="examples.html">Examples</a></li>
+              
+            
+          
+          </ul>
+        
+      </nav>
+    </div>
+
+    <header class="cortana-header sb-slide">
+      
+      <div id="open-left" class="cortana-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="cortana-search-wrapper" ng-controller="TypeaheadCtrl">
+        <input id="cortana-search" type="text" class="form-control cortana-search" ng-model="customSelected" placeholder="Search" typeahead="data as data.title for data in searchData | filter:{title:$viewValue}" typeahead-template-url="customTemplate.html" class="form-control" typeahead-on-select="onSelect($item, $model, $label)">
+      </div>
+    </header>
+
+    <div id="sb-site">
+
+      <div class="cortana-container">
+
+        <nav id="cortana-inside-nav" class="cortana-inside-nav" bs-affix>
+          <ul bs-scrollspy-list data-offset="-30">
+            
+          </ul>
+        </nav>
+
+        <div class="cortana-content-wrapper clearfix">
+          <div class="cortana-content">
+
+
+
+<h1>Contributing to bootstrap-sass</h1>
+
+<h2>Asset Changes</h2>
+
+<p>Any changes to <code>bootstrap-sass</code> assets (scss, javascripts, fonts) should be checked against the <code>convert</code> rake task.
+For usage instructions, see the <a href="https://github.com/twbs/bootstrap-sass/blob/3/README.md">README</a>.</p>
+
+<p>If something is broken in the converter, it&#39;s preferable to update the converter along with the asset itself.</p>
+
+<h2>Bugs</h2>
+
+<p>A bug is a <em>demonstrable problem</em> that is caused by the code in the
+repository. Good bug reports are extremely helpful - thank you!</p>
+
+<p>Guidelines for bug reports:</p>
+
+<ol>
+<li><p><strong>Does it belong here?</strong> &mdash; is this a problem with bootstrap-sass, or
+it an issue with <a href="https://github.com/twbs/bootstrap">twbs/bootstrap</a>?
+We only distribute a direct port and will not modify files if they&#39;re not
+changed upstream.</p></li>
+<li><p><strong>Use the GitHub issue search</strong> &mdash; check if the issue has already been
+reported.</p></li>
+<li><p><strong>Isolate the problem</strong> &mdash; ideally create a <a href="http://css-tricks.com/6263-reduced-test-cases/">reduced test
+case</a> and a live example.</p></li>
+</ol>
+
+<p>A good bug report shouldn&#39;t leave others needing to chase you up for more
+information. Please try to be as detailed as possible in your report. What is
+your environment? What steps will reproduce the issue? What browser(s) and OS
+experience the problem? What would you expect to be the outcome? All these
+details will help people to fix any potential bugs.</p>
+
+<p>Example:</p>
+
+<blockquote>
+<p>Short and descriptive example bug report title</p>
+
+<p>A summary of the issue and the browser/OS environment in which it occurs. If
+suitable, include the steps required to reproduce the bug.</p>
+
+<ol>
+<li>This is the first step</li>
+<li>This is the second step</li>
+<li>Further steps, etc.</li>
+</ol>
+
+<p><code>&lt;url&gt;</code> (a link to the reduced test case)</p>
+
+<p>Any other information you want to share that is relevant to the issue being
+reported. This might include the lines of code that you have identified as
+causing the bug, and potential solutions (and your opinions on their
+merits).</p>
+</blockquote>
+
+<p><strong><a href="https://github.com/twbs/bootstrap-sass/issues/">File a bug report</a></strong></p>
+
+<h2>Pull requests</h2>
+
+<p><strong>We will not accept pull requests that modify the SCSS beyond fixing bugs caused by <em>our</em> code!</strong></p>
+
+<p>Most pull requests should go to <a href="https://github.com/twbs/bootstrap">twbs/bootstrap</a> or <a href="https://github.com/jlong/sass-twitter-bootstrap">jlong/sass-twitter-bootstrap</a></p>
+
+<p>Good pull requests - patches, improvements, new features - are a fantastic
+help. They should remain focused in scope and avoid containing unrelated
+commits. If your contribution involves a significant amount of work or substantial
+changes to any part of the project, please open an issue to discuss it first.</p>
+
+<p>Make sure to adhere to the coding conventions used throughout a project
+(indentation, accurate comments, etc.). Please update any documentation that is
+relevant to the change you&#39;re making.</p>
+
+<h2>Do not…</h2>
+
+<p>Please <strong>do not</strong> use the issue tracker for personal support requests (use
+<a href="http://stackoverflow.com/">Stack Overflow</a>).</p>
+
+<p>Please <strong>do not</strong> derail or troll issues. Keep the
+discussion on topic and respect the opinions of others.</p>
+
+<p><em>props <a href="https://github.com/h5bp/html5-boilerplate/blob/master/CONTRIBUTING.md">html5-boilerplate</a></em></p>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="cortana-footer">
+      Build with love using Trulia's <a href="https://github.com/trulia/hologram">Hologram</a> and <a href="https://github.com/Yago/Cortana">Cortana</a> !
+    </footer>  
+  </div>
+
+  <script src="theme-build/js/vendors.min.js"></script>
+  <script type="text/javascript">
+    var jQuery_no_conflict = $.noConflict(true);
+  </script>
+  <script src="theme-build/js/main.js"></script>
+  <script type="text/javascript">
+    function TypeaheadCtrl($scope) {
+      $scope.selected = undefined;
+      $scope.searchData = 
+      [
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Start",
+              "breadcrumb": "Examples > Start",
+              "path": "examples.html#01start"
+              },
+            
+              
+              
+              {
+              "title": "Refactoring",
+              "breadcrumb": "Examples > Refactoring",
+              "path": "examples.html#02refactoring"
+              },
+            
+              
+              
+              {
+              "title": "Framework",
+              "breadcrumb": "Examples > Framework",
+              "path": "examples.html#04framework"
+              },
+            
+              
+              
+              {
+              "title": "Final",
+              "breadcrumb": "Examples > Final",
+              "path": "examples.html#05final"
+              },
+            
+          
+        
+      {}];
+      $scope.onSelect = function ($item, $model, $label) {
+        window.location.replace($item.path);
+      };
+    }
+  </script>
+  <script type="text/ng-template" id="customTemplate.html">
+    <a href="{{match.model.path}}">
+      <p class="cortana-search-title">{{match.model.title}}</p>
+      <p class="cortana-search-path">{{match.model.breadcrumb}}</p>
+    </a>
+  </script>
+  
+    
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    
+      <script type="text/javascript" src="../assets/js/main.js"></script>
+    
+  
+  <!-- Source Components -->
+  
+</body>
+</html>

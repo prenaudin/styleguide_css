@@ -1,0 +1,138 @@
+//doc
+  ---
+  title: Framework
+  name: 04framework
+  category: Examples
+  ---
+
+  Ici, on réécrit l'exemple avec Boostrap pour voir comment
+  celui-ci normalise ce dont on a besoin
+
+
+  ```html_example
+    <section class="row framework">
+      <div class="col-xs-4">
+        <div class="user-profile panel panel-default text-center">
+          <div class="user-avatar user-avatar-large">
+            <img src="../assets/images/avatar.png"/>
+          </div>
+          <div class="panel-body">
+            <h2><b>MC Hammer</b></h2>
+
+            <ul class="user-informations small text-left">
+              <li>
+                <b>Email</b>: mchammer@gangsta.com
+              </li>
+              <li>
+                <b>Address</b>: Ghetto Blaster, 23 av.
+              </li>
+              <li>
+                <b>Phone</b>: You foolish chicken
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-8">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Messages
+          </div>
+          <div class="panel-body">
+            <ul class="messages">
+              <li class="message media">
+                <div class="message-header pull-left">
+                  <div class="user-avatar user-avatar-medium">
+                    <img src="../assets/images/avatar.png"/>
+                  </div>
+                </div>
+                <div class="message-content media-body">
+                  <p><b>MC Hammer</b> <small>- Yesterday, 8:01</small></p>
+                  <p>My-my-my-my music keeps me so hard makes me say oh my Lord
+                  Thank you for blessing me with a mind to rhyme and two hype feet</p>
+                </div>
+              <li>
+              <li class="message media">
+                <div class="message-header pull-left">
+                  <div class="user-avatar user-avatar-medium">
+                    <img src="../assets/images/avatar.png"/>
+                  </div>
+                </div>
+                <div class="message-content media-body">
+                  <p><b>MC Hammer</b> <small>- Yesterday, 8:01</small></p>
+                  <p>My-my-my-my music keeps me so hard makes me say oh my Lord
+                  Thank you for blessing me with a mind to rhyme and two hype feet</p>
+                </div>
+              <li>
+              <li class="message media">
+                <div class="message-header pull-left">
+                  <div class="user-avatar user-avatar-medium">
+                    <img src="../assets/images/avatar.png"/>
+                  </div>
+                </div>
+                <div class="message-content media-body">
+                  <p><b>MC Hammer</b> <small>- Yesterday, 8:01</small></p>
+                  <p>My-my-my-my music keeps me so hard makes me say oh my Lord
+                  Thank you for blessing me with a mind to rhyme and two hype feet</p>
+                </div>
+              <li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  ```
+
+section.framework
+  $font-family-sans-serif: 'Open Sans', 'sans-serif'
+  font-family: $font-family-sans-serif
+
+  $font-size-h2: 22px
+
+  // Bootrap variables import
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/variables
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins
+
+  // Reset and dependencies
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/normalize
+
+  // Core CSS
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/scaffolding
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/type
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/code
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/grid
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/tables
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/forms
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/buttons
+
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/panels
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/utilities
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/responsive-utilities
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/media
+
+  margin-top: 45px
+
+  ul
+    margin: 0
+    padding: 0
+
+  ul li
+    list-style-type: none
+
+  h2
+    margin-top: 5px
+
+  .user-avatar-medium
+    img
+      width: 32px
+      height: 32px
+      border-radius: 3px
+
+  .user-avatar-large
+    img
+      width: 90px
+      height: 90px
+      border-radius: 6px
+
+  .user-profile .user-avatar
+    margin-top: -45px

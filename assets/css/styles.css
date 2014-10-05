@@ -1,0 +1,2880 @@
+/* line 86, ../../sass/_framework.sass */
+section.framework {
+  font-family: "Open Sans", "sans-serif";
+  /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+  @-ms-viewport {
+    width: device-width; }
+
+  margin-top: 45px; }
+  /* line 9, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; }
+  /* line 19, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework body {
+    margin: 0; }
+  /* line 43, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework article,
+  section.framework aside,
+  section.framework details,
+  section.framework figcaption,
+  section.framework figure,
+  section.framework footer,
+  section.framework header,
+  section.framework hgroup,
+  section.framework main,
+  section.framework nav,
+  section.framework section,
+  section.framework summary {
+    display: block; }
+  /* line 55, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework audio,
+  section.framework canvas,
+  section.framework progress,
+  section.framework video {
+    display: inline-block;
+    vertical-align: baseline; }
+  /* line 65, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework audio:not([controls]) {
+    display: none;
+    height: 0; }
+  /* line 76, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework [hidden],
+  section.framework template {
+    display: none; }
+  /* line 87, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework a {
+    background: transparent; }
+  /* line 96, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework a:active,
+  section.framework a:hover {
+    outline: 0; }
+  /* line 107, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework abbr[title] {
+    border-bottom: 1px dotted; }
+  /* line 116, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework b,
+  section.framework strong {
+    font-weight: bold; }
+  /* line 124, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework dfn {
+    font-style: italic; }
+  /* line 133, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework h1 {
+    font-size: 2em;
+    margin: 0.67em 0; }
+  /* line 142, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework mark {
+    background: #ff0;
+    color: #000; }
+  /* line 151, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework small {
+    font-size: 80%; }
+  /* line 160, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework sub,
+  section.framework sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline; }
+  /* line 167, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework sup {
+    top: -0.5em; }
+  /* line 171, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework sub {
+    bottom: -0.25em; }
+  /* line 182, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework img {
+    border: 0; }
+  /* line 190, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework svg:not(:root) {
+    overflow: hidden; }
+  /* line 201, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework figure {
+    margin: 1em 40px; }
+  /* line 209, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0; }
+  /* line 219, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework pre {
+    overflow: auto; }
+  /* line 230, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework code,
+  section.framework kbd,
+  section.framework pre,
+  section.framework samp {
+    font-family: monospace, monospace;
+    font-size: 1em; }
+  /* line 254, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework button,
+  section.framework input,
+  section.framework optgroup,
+  section.framework select,
+  section.framework textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0; }
+  /* line 264, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework button {
+    overflow: visible; }
+  /* line 276, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework button,
+  section.framework select {
+    text-transform: none; }
+  /* line 291, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework button,
+  section.framework html input[type="button"],
+  section.framework input[type="reset"],
+  section.framework input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer; }
+  /* line 301, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework button[disabled],
+  section.framework html input[disabled] {
+    cursor: default; }
+  /* line 310, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework button::-moz-focus-inner,
+  section.framework input::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+  /* line 320, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework input {
+    line-height: normal; }
+  /* line 333, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework input[type="checkbox"],
+  section.framework input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0; }
+  /* line 345, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework input[type="number"]::-webkit-inner-spin-button,
+  section.framework input[type="number"]::-webkit-outer-spin-button {
+    height: auto; }
+  /* line 355, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box; }
+  /* line 369, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework input[type="search"]::-webkit-search-cancel-button,
+  section.framework input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+  /* line 377, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em; }
+  /* line 388, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework legend {
+    border: 0;
+    padding: 0; }
+  /* line 397, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework textarea {
+    overflow: auto; }
+  /* line 406, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework optgroup {
+    font-weight: bold; }
+  /* line 417, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  /* line 423, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_normalize.scss */
+  section.framework td,
+  section.framework th {
+    padding: 0; }
+  /* line 11, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_scaffolding.scss */
+  section.framework * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  /* line 15, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_scaffolding.scss */
+  section.framework *:before,
+  section.framework *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  /* line 22, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_scaffolding.scss */
+  section.framework html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  /* line 27, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_scaffolding.scss */
+  section.framework body {
+    font-family: "Open Sans", "sans-serif";
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #333333;
+    background-color: white; }
+  /* line 39, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_scaffolding.scss */
+  section.framework input,
+  section.framework button,
+  section.framework select,
+  section.framework textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit; }
+  /* line 48, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_scaffolding.scss */
+  section.framework a {
+    color: #428bca;
+    text-decoration: none; }
+    /* line 53, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_scaffolding.scss */
+    section.framework a:hover, section.framework a:focus {
+      color: #2a6496;
+      text-decoration: underline; }
+    /* line 58, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_scaffolding.scss */
+    section.framework a:focus {
+      outline: thin dotted;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+  /* line 69, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_scaffolding.scss */
+  section.framework figure {
+    margin: 0; }
+  /* line 76, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_scaffolding.scss */
+  section.framework img {
+    vertical-align: middle; }
+  /* line 81, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_scaffolding.scss */
+  section.framework .img-responsive {
+    display: block;
+    width: 100% \9;
+    max-width: 100%;
+    height: auto; }
+  /* line 86, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_scaffolding.scss */
+  section.framework .img-rounded {
+    border-radius: 6px; }
+  /* line 93, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_scaffolding.scss */
+  section.framework .img-thumbnail {
+    padding: 4px;
+    line-height: 1.42857;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    width: 100% \9;
+    max-width: 100%;
+    height: auto; }
+  /* line 106, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_scaffolding.scss */
+  section.framework .img-circle {
+    border-radius: 50%; }
+  /* line 113, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_scaffolding.scss */
+  section.framework hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eeeeee; }
+  /* line 125, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_scaffolding.scss */
+  section.framework .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0; }
+  /* line 142, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_scaffolding.scss */
+  section.framework .sr-only-focusable:active, section.framework .sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto; }
+  /* line 10, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework h1, section.framework h2, section.framework h3, section.framework h4, section.framework h5, section.framework h6,
+  section.framework .h1, section.framework .h2, section.framework .h3, section.framework .h4, section.framework .h5, section.framework .h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit; }
+    /* line 17, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+    section.framework h1 small,
+    section.framework h1 .small, section.framework h2 small,
+    section.framework h2 .small, section.framework h3 small,
+    section.framework h3 .small, section.framework h4 small,
+    section.framework h4 .small, section.framework h5 small,
+    section.framework h5 .small, section.framework h6 small,
+    section.framework h6 .small,
+    section.framework .h1 small,
+    section.framework .h1 .small, section.framework .h2 small,
+    section.framework .h2 .small, section.framework .h3 small,
+    section.framework .h3 .small, section.framework .h4 small,
+    section.framework .h4 .small, section.framework .h5 small,
+    section.framework .h5 .small, section.framework .h6 small,
+    section.framework .h6 .small {
+      font-weight: normal;
+      line-height: 1;
+      color: #777777; }
+  /* line 26, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework h1, section.framework .h1,
+  section.framework h2, section.framework .h2,
+  section.framework h3, section.framework .h3 {
+    margin-top: 20px;
+    margin-bottom: 10px; }
+    /* line 31, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+    section.framework h1 small,
+    section.framework h1 .small, section.framework .h1 small,
+    section.framework .h1 .small,
+    section.framework h2 small,
+    section.framework h2 .small, section.framework .h2 small,
+    section.framework .h2 .small,
+    section.framework h3 small,
+    section.framework h3 .small, section.framework .h3 small,
+    section.framework .h3 .small {
+      font-size: 65%; }
+  /* line 37, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework h4, section.framework .h4,
+  section.framework h5, section.framework .h5,
+  section.framework h6, section.framework .h6 {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    /* line 42, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+    section.framework h4 small,
+    section.framework h4 .small, section.framework .h4 small,
+    section.framework .h4 .small,
+    section.framework h5 small,
+    section.framework h5 .small, section.framework .h5 small,
+    section.framework .h5 .small,
+    section.framework h6 small,
+    section.framework h6 .small, section.framework .h6 small,
+    section.framework .h6 .small {
+      font-size: 75%; }
+  /* line 47, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework h1, section.framework .h1 {
+    font-size: 36px; }
+  /* line 48, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework h2, section.framework .h2 {
+    font-size: 22px; }
+  /* line 49, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework h3, section.framework .h3 {
+    font-size: 24px; }
+  /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework h4, section.framework .h4 {
+    font-size: 18px; }
+  /* line 51, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework h5, section.framework .h5 {
+    font-size: 14px; }
+  /* line 52, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework h6, section.framework .h6 {
+    font-size: 12px; }
+  /* line 58, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework p {
+    margin: 0 0 10px; }
+  /* line 62, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework .lead {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4; }
+    @media (min-width: 768px) {
+      /* line 62, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+      section.framework .lead {
+        font-size: 21px; } }
+  /* line 79, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework small,
+  section.framework .small {
+    font-size: 85%; }
+  /* line 84, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework cite {
+    font-style: normal; }
+  /* line 89, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework mark,
+  section.framework .mark {
+    background-color: #fcf8e3;
+    padding: .2em; }
+  /* line 95, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework .text-left {
+    text-align: left; }
+  /* line 96, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework .text-right {
+    text-align: right; }
+  /* line 97, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework .text-center {
+    text-align: center; }
+  /* line 98, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework .text-justify {
+    text-align: justify; }
+  /* line 99, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework .text-nowrap {
+    white-space: nowrap; }
+  /* line 102, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework .text-lowercase {
+    text-transform: lowercase; }
+  /* line 103, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework .text-uppercase {
+    text-transform: uppercase; }
+  /* line 104, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework .text-capitalize {
+    text-transform: capitalize; }
+  /* line 107, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework .text-muted {
+    color: #777777; }
+  /* line 5, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+  section.framework .text-primary {
+    color: #428bca; }
+  /* line 8, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+  section.framework a.text-primary:hover {
+    color: #3071a9; }
+  /* line 5, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+  section.framework .text-success {
+    color: #3c763d; }
+  /* line 8, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+  section.framework a.text-success:hover {
+    color: #2b542c; }
+  /* line 5, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+  section.framework .text-info {
+    color: #31708f; }
+  /* line 8, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+  section.framework a.text-info:hover {
+    color: #245269; }
+  /* line 5, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+  section.framework .text-warning {
+    color: #8a6d3b; }
+  /* line 8, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+  section.framework a.text-warning:hover {
+    color: #66512c; }
+  /* line 5, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+  section.framework .text-danger {
+    color: #a94442; }
+  /* line 8, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+  section.framework a.text-danger:hover {
+    color: #843534; }
+  /* line 124, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework .bg-primary {
+    color: #fff; }
+  /* line 5, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
+  section.framework .bg-primary {
+    background-color: #428bca; }
+  /* line 8, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
+  section.framework a.bg-primary:hover {
+    background-color: #3071a9; }
+  /* line 5, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
+  section.framework .bg-success {
+    background-color: #dff0d8; }
+  /* line 8, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
+  section.framework a.bg-success:hover {
+    background-color: #c1e2b3; }
+  /* line 5, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
+  section.framework .bg-info {
+    background-color: #d9edf7; }
+  /* line 8, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
+  section.framework a.bg-info:hover {
+    background-color: #afd9ee; }
+  /* line 5, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
+  section.framework .bg-warning {
+    background-color: #fcf8e3; }
+  /* line 8, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
+  section.framework a.bg-warning:hover {
+    background-color: #f7ecb5; }
+  /* line 5, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
+  section.framework .bg-danger {
+    background-color: #f2dede; }
+  /* line 8, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
+  section.framework a.bg-danger:hover {
+    background-color: #e4b9b9; }
+  /* line 143, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework .page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eeeeee; }
+  /* line 155, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework ul,
+  section.framework ol {
+    margin-top: 0;
+    margin-bottom: 10px; }
+    /* line 159, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+    section.framework ul ul,
+    section.framework ul ol,
+    section.framework ol ul,
+    section.framework ol ol {
+      margin-bottom: 0; }
+  /* line 167, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework .list-unstyled, section.framework .list-inline {
+    padding-left: 0;
+    list-style: none; }
+  /* line 173, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework .list-inline {
+    margin-left: -5px; }
+    /* line 177, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+    section.framework .list-inline > li {
+      display: inline-block;
+      padding-left: 5px;
+      padding-right: 5px; }
+  /* line 185, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework dl {
+    margin-top: 0;
+    margin-bottom: 20px; }
+  /* line 190, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework dt,
+  section.framework dd {
+    line-height: 1.42857; }
+  /* line 193, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework dt {
+    font-weight: bold; }
+  /* line 196, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework dd {
+    margin-left: 0; }
+  /* line 15, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  section.framework .dl-horizontal dd:before, section.framework .dl-horizontal dd:after {
+    content: " ";
+    display: table; }
+  /* line 19, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  section.framework .dl-horizontal dd:after {
+    clear: both; }
+  @media (min-width: 768px) {
+    /* line 211, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+    section.framework .dl-horizontal dt {
+      float: left;
+      width: 160px;
+      clear: left;
+      text-align: right;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    /* line 218, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+    section.framework .dl-horizontal dd {
+      margin-left: 180px; } }
+  /* line 231, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework abbr[title],
+  section.framework abbr[data-original-title] {
+    cursor: help;
+    border-bottom: 1px dotted #777777; }
+  /* line 235, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework .initialism {
+    font-size: 90%;
+    text-transform: uppercase; }
+  /* line 241, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #eeeeee; }
+    /* line 250, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+    section.framework blockquote p:last-child,
+    section.framework blockquote ul:last-child,
+    section.framework blockquote ol:last-child {
+      margin-bottom: 0; }
+    /* line 259, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+    section.framework blockquote footer,
+    section.framework blockquote small,
+    section.framework blockquote .small {
+      display: block;
+      font-size: 80%;
+      line-height: 1.42857;
+      color: #777777; }
+      /* line 265, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+      section.framework blockquote footer:before,
+      section.framework blockquote small:before,
+      section.framework blockquote .small:before {
+        content: '\2014 \00A0'; }
+  /* line 275, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework .blockquote-reverse,
+  section.framework blockquote.pull-right {
+    padding-right: 15px;
+    padding-left: 0;
+    border-right: 5px solid #eeeeee;
+    border-left: 0;
+    text-align: right; }
+    /* line 286, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+    section.framework .blockquote-reverse footer:before,
+    section.framework .blockquote-reverse small:before,
+    section.framework .blockquote-reverse .small:before,
+    section.framework blockquote.pull-right footer:before,
+    section.framework blockquote.pull-right small:before,
+    section.framework blockquote.pull-right .small:before {
+      content: ''; }
+    /* line 287, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+    section.framework .blockquote-reverse footer:after,
+    section.framework .blockquote-reverse small:after,
+    section.framework .blockquote-reverse .small:after,
+    section.framework blockquote.pull-right footer:after,
+    section.framework blockquote.pull-right small:after,
+    section.framework blockquote.pull-right .small:after {
+      content: '\00A0 \2014'; }
+  /* line 295, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework blockquote:before,
+  section.framework blockquote:after {
+    content: ""; }
+  /* line 300, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_type.scss */
+  section.framework address {
+    margin-bottom: 20px;
+    font-style: normal;
+    line-height: 1.42857; }
+  /* line 10, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_code.scss */
+  section.framework code,
+  section.framework kbd,
+  section.framework pre,
+  section.framework samp {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
+  /* line 15, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_code.scss */
+  section.framework code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px; }
+  /* line 24, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_code.scss */
+  section.framework kbd {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: white;
+    background-color: #333333;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25); }
+    /* line 32, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_code.scss */
+    section.framework kbd kbd {
+      padding: 0;
+      font-size: 100%;
+      box-shadow: none; }
+  /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_code.scss */
+  section.framework pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333333;
+    background-color: whitesmoke;
+    border: 1px solid #cccccc;
+    border-radius: 4px; }
+    /* line 54, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_code.scss */
+    section.framework pre code {
+      padding: 0;
+      font-size: inherit;
+      color: inherit;
+      white-space: pre-wrap;
+      background-color: transparent;
+      border-radius: 0; }
+  /* line 65, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_code.scss */
+  section.framework .pre-scrollable {
+    max-height: 340px;
+    overflow-y: scroll; }
+  /* line 10, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_grid.scss */
+  section.framework .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px; }
+    /* line 15, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+    section.framework .container:before, section.framework .container:after {
+      content: " ";
+      display: table; }
+    /* line 19, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+    section.framework .container:after {
+      clear: both; }
+    @media (min-width: 768px) {
+      /* line 10, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_grid.scss */
+      section.framework .container {
+        width: 750px; } }
+    @media (min-width: 992px) {
+      /* line 10, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_grid.scss */
+      section.framework .container {
+        width: 970px; } }
+    @media (min-width: 1200px) {
+      /* line 10, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_grid.scss */
+      section.framework .container {
+        width: 1170px; } }
+  /* line 30, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_grid.scss */
+  section.framework .container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px; }
+    /* line 15, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+    section.framework .container-fluid:before, section.framework .container-fluid:after {
+      content: " ";
+      display: table; }
+    /* line 19, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+    section.framework .container-fluid:after {
+      clear: both; }
+  /* line 39, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_grid.scss */
+  section.framework .row {
+    margin-left: -15px;
+    margin-right: -15px; }
+    /* line 15, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+    section.framework .row:before, section.framework .row:after {
+      content: " ";
+      display: table; }
+    /* line 19, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+    section.framework .row:after {
+      clear: both; }
+  /* line 11, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-1, section.framework .col-sm-1, section.framework .col-md-1, section.framework .col-lg-1, section.framework .col-xs-2, section.framework .col-sm-2, section.framework .col-md-2, section.framework .col-lg-2, section.framework .col-xs-3, section.framework .col-sm-3, section.framework .col-md-3, section.framework .col-lg-3, section.framework .col-xs-4, section.framework .col-sm-4, section.framework .col-md-4, section.framework .col-lg-4, section.framework .col-xs-5, section.framework .col-sm-5, section.framework .col-md-5, section.framework .col-lg-5, section.framework .col-xs-6, section.framework .col-sm-6, section.framework .col-md-6, section.framework .col-lg-6, section.framework .col-xs-7, section.framework .col-sm-7, section.framework .col-md-7, section.framework .col-lg-7, section.framework .col-xs-8, section.framework .col-sm-8, section.framework .col-md-8, section.framework .col-lg-8, section.framework .col-xs-9, section.framework .col-sm-9, section.framework .col-md-9, section.framework .col-lg-9, section.framework .col-xs-10, section.framework .col-sm-10, section.framework .col-md-10, section.framework .col-lg-10, section.framework .col-xs-11, section.framework .col-sm-11, section.framework .col-md-11, section.framework .col-lg-11, section.framework .col-xs-12, section.framework .col-sm-12, section.framework .col-md-12, section.framework .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+  /* line 27, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-1, section.framework .col-xs-2, section.framework .col-xs-3, section.framework .col-xs-4, section.framework .col-xs-5, section.framework .col-xs-6, section.framework .col-xs-7, section.framework .col-xs-8, section.framework .col-xs-9, section.framework .col-xs-10, section.framework .col-xs-11, section.framework .col-xs-12 {
+    float: left; }
+  /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-1 {
+    width: 8.33333%; }
+  /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-2 {
+    width: 16.66667%; }
+  /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-3 {
+    width: 25%; }
+  /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-4 {
+    width: 33.33333%; }
+  /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-5 {
+    width: 41.66667%; }
+  /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-6 {
+    width: 50%; }
+  /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-7 {
+    width: 58.33333%; }
+  /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-8 {
+    width: 66.66667%; }
+  /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-9 {
+    width: 75%; }
+  /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-10 {
+    width: 83.33333%; }
+  /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-11 {
+    width: 91.66667%; }
+  /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-12 {
+    width: 100%; }
+  /* line 55, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-pull-0 {
+    right: auto; }
+  /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-pull-1 {
+    right: 8.33333%; }
+  /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-pull-2 {
+    right: 16.66667%; }
+  /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-pull-3 {
+    right: 25%; }
+  /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-pull-4 {
+    right: 33.33333%; }
+  /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-pull-5 {
+    right: 41.66667%; }
+  /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-pull-6 {
+    right: 50%; }
+  /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-pull-7 {
+    right: 58.33333%; }
+  /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-pull-8 {
+    right: 66.66667%; }
+  /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-pull-9 {
+    right: 75%; }
+  /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-pull-10 {
+    right: 83.33333%; }
+  /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-pull-11 {
+    right: 91.66667%; }
+  /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-pull-12 {
+    right: 100%; }
+  /* line 45, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-push-0 {
+    left: auto; }
+  /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-push-1 {
+    left: 8.33333%; }
+  /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-push-2 {
+    left: 16.66667%; }
+  /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-push-3 {
+    left: 25%; }
+  /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-push-4 {
+    left: 33.33333%; }
+  /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-push-5 {
+    left: 41.66667%; }
+  /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-push-6 {
+    left: 50%; }
+  /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-push-7 {
+    left: 58.33333%; }
+  /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-push-8 {
+    left: 66.66667%; }
+  /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-push-9 {
+    left: 75%; }
+  /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-push-10 {
+    left: 83.33333%; }
+  /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-push-11 {
+    left: 91.66667%; }
+  /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-push-12 {
+    left: 100%; }
+  /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-offset-0 {
+    margin-left: 0%; }
+  /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-offset-1 {
+    margin-left: 8.33333%; }
+  /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-offset-2 {
+    margin-left: 16.66667%; }
+  /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-offset-3 {
+    margin-left: 25%; }
+  /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-offset-4 {
+    margin-left: 33.33333%; }
+  /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-offset-5 {
+    margin-left: 41.66667%; }
+  /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-offset-6 {
+    margin-left: 50%; }
+  /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-offset-7 {
+    margin-left: 58.33333%; }
+  /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-offset-8 {
+    margin-left: 66.66667%; }
+  /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-offset-9 {
+    margin-left: 75%; }
+  /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-offset-10 {
+    margin-left: 83.33333%; }
+  /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-offset-11 {
+    margin-left: 91.66667%; }
+  /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  section.framework .col-xs-offset-12 {
+    margin-left: 100%; }
+  @media (min-width: 768px) {
+    /* line 27, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-1, section.framework .col-sm-2, section.framework .col-sm-3, section.framework .col-sm-4, section.framework .col-sm-5, section.framework .col-sm-6, section.framework .col-sm-7, section.framework .col-sm-8, section.framework .col-sm-9, section.framework .col-sm-10, section.framework .col-sm-11, section.framework .col-sm-12 {
+      float: left; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-1 {
+      width: 8.33333%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-2 {
+      width: 16.66667%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-3 {
+      width: 25%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-4 {
+      width: 33.33333%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-5 {
+      width: 41.66667%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-6 {
+      width: 50%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-7 {
+      width: 58.33333%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-8 {
+      width: 66.66667%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-9 {
+      width: 75%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-10 {
+      width: 83.33333%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-11 {
+      width: 91.66667%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-12 {
+      width: 100%; }
+    /* line 55, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-pull-0 {
+      right: auto; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-pull-1 {
+      right: 8.33333%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-pull-2 {
+      right: 16.66667%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-pull-3 {
+      right: 25%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-pull-4 {
+      right: 33.33333%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-pull-5 {
+      right: 41.66667%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-pull-6 {
+      right: 50%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-pull-7 {
+      right: 58.33333%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-pull-8 {
+      right: 66.66667%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-pull-9 {
+      right: 75%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-pull-10 {
+      right: 83.33333%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-pull-11 {
+      right: 91.66667%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-pull-12 {
+      right: 100%; }
+    /* line 45, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-push-0 {
+      left: auto; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-push-1 {
+      left: 8.33333%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-push-2 {
+      left: 16.66667%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-push-3 {
+      left: 25%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-push-4 {
+      left: 33.33333%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-push-5 {
+      left: 41.66667%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-push-6 {
+      left: 50%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-push-7 {
+      left: 58.33333%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-push-8 {
+      left: 66.66667%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-push-9 {
+      left: 75%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-push-10 {
+      left: 83.33333%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-push-11 {
+      left: 91.66667%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-push-12 {
+      left: 100%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-offset-0 {
+      margin-left: 0%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-offset-1 {
+      margin-left: 8.33333%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-offset-2 {
+      margin-left: 16.66667%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-offset-3 {
+      margin-left: 25%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-offset-4 {
+      margin-left: 33.33333%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-offset-5 {
+      margin-left: 41.66667%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-offset-6 {
+      margin-left: 50%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-offset-7 {
+      margin-left: 58.33333%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-offset-8 {
+      margin-left: 66.66667%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-offset-9 {
+      margin-left: 75%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-offset-10 {
+      margin-left: 83.33333%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-offset-11 {
+      margin-left: 91.66667%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-sm-offset-12 {
+      margin-left: 100%; } }
+  @media (min-width: 992px) {
+    /* line 27, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-1, section.framework .col-md-2, section.framework .col-md-3, section.framework .col-md-4, section.framework .col-md-5, section.framework .col-md-6, section.framework .col-md-7, section.framework .col-md-8, section.framework .col-md-9, section.framework .col-md-10, section.framework .col-md-11, section.framework .col-md-12 {
+      float: left; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-1 {
+      width: 8.33333%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-2 {
+      width: 16.66667%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-3 {
+      width: 25%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-4 {
+      width: 33.33333%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-5 {
+      width: 41.66667%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-6 {
+      width: 50%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-7 {
+      width: 58.33333%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-8 {
+      width: 66.66667%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-9 {
+      width: 75%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-10 {
+      width: 83.33333%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-11 {
+      width: 91.66667%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-12 {
+      width: 100%; }
+    /* line 55, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-pull-0 {
+      right: auto; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-pull-1 {
+      right: 8.33333%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-pull-2 {
+      right: 16.66667%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-pull-3 {
+      right: 25%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-pull-4 {
+      right: 33.33333%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-pull-5 {
+      right: 41.66667%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-pull-6 {
+      right: 50%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-pull-7 {
+      right: 58.33333%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-pull-8 {
+      right: 66.66667%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-pull-9 {
+      right: 75%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-pull-10 {
+      right: 83.33333%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-pull-11 {
+      right: 91.66667%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-pull-12 {
+      right: 100%; }
+    /* line 45, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-push-0 {
+      left: auto; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-push-1 {
+      left: 8.33333%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-push-2 {
+      left: 16.66667%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-push-3 {
+      left: 25%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-push-4 {
+      left: 33.33333%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-push-5 {
+      left: 41.66667%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-push-6 {
+      left: 50%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-push-7 {
+      left: 58.33333%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-push-8 {
+      left: 66.66667%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-push-9 {
+      left: 75%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-push-10 {
+      left: 83.33333%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-push-11 {
+      left: 91.66667%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-push-12 {
+      left: 100%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-offset-0 {
+      margin-left: 0%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-offset-1 {
+      margin-left: 8.33333%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-offset-2 {
+      margin-left: 16.66667%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-offset-3 {
+      margin-left: 25%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-offset-4 {
+      margin-left: 33.33333%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-offset-5 {
+      margin-left: 41.66667%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-offset-6 {
+      margin-left: 50%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-offset-7 {
+      margin-left: 58.33333%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-offset-8 {
+      margin-left: 66.66667%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-offset-9 {
+      margin-left: 75%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-offset-10 {
+      margin-left: 83.33333%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-offset-11 {
+      margin-left: 91.66667%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-md-offset-12 {
+      margin-left: 100%; } }
+  @media (min-width: 1200px) {
+    /* line 27, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-1, section.framework .col-lg-2, section.framework .col-lg-3, section.framework .col-lg-4, section.framework .col-lg-5, section.framework .col-lg-6, section.framework .col-lg-7, section.framework .col-lg-8, section.framework .col-lg-9, section.framework .col-lg-10, section.framework .col-lg-11, section.framework .col-lg-12 {
+      float: left; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-1 {
+      width: 8.33333%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-2 {
+      width: 16.66667%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-3 {
+      width: 25%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-4 {
+      width: 33.33333%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-5 {
+      width: 41.66667%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-6 {
+      width: 50%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-7 {
+      width: 58.33333%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-8 {
+      width: 66.66667%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-9 {
+      width: 75%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-10 {
+      width: 83.33333%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-11 {
+      width: 91.66667%; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-12 {
+      width: 100%; }
+    /* line 55, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-pull-0 {
+      right: auto; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-pull-1 {
+      right: 8.33333%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-pull-2 {
+      right: 16.66667%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-pull-3 {
+      right: 25%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-pull-4 {
+      right: 33.33333%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-pull-5 {
+      right: 41.66667%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-pull-6 {
+      right: 50%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-pull-7 {
+      right: 58.33333%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-pull-8 {
+      right: 66.66667%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-pull-9 {
+      right: 75%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-pull-10 {
+      right: 83.33333%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-pull-11 {
+      right: 91.66667%; }
+    /* line 50, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-pull-12 {
+      right: 100%; }
+    /* line 45, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-push-0 {
+      left: auto; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-push-1 {
+      left: 8.33333%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-push-2 {
+      left: 16.66667%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-push-3 {
+      left: 25%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-push-4 {
+      left: 33.33333%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-push-5 {
+      left: 41.66667%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-push-6 {
+      left: 50%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-push-7 {
+      left: 58.33333%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-push-8 {
+      left: 66.66667%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-push-9 {
+      left: 75%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-push-10 {
+      left: 83.33333%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-push-11 {
+      left: 91.66667%; }
+    /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-push-12 {
+      left: 100%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-offset-0 {
+      margin-left: 0%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-offset-1 {
+      margin-left: 8.33333%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-offset-2 {
+      margin-left: 16.66667%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-offset-3 {
+      margin-left: 25%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-offset-4 {
+      margin-left: 33.33333%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-offset-5 {
+      margin-left: 41.66667%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-offset-6 {
+      margin-left: 50%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-offset-7 {
+      margin-left: 58.33333%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-offset-8 {
+      margin-left: 66.66667%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-offset-9 {
+      margin-left: 75%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-offset-10 {
+      margin-left: 83.33333%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-offset-11 {
+      margin-left: 91.66667%; }
+    /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+    section.framework .col-lg-offset-12 {
+      margin-left: 100%; } }
+  /* line 6, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+  section.framework table {
+    background-color: transparent; }
+  /* line 9, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+  section.framework th {
+    text-align: left; }
+  /* line 16, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+  section.framework .table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px; }
+    /* line 26, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+    section.framework .table > thead > tr > th,
+    section.framework .table > thead > tr > td,
+    section.framework .table > tbody > tr > th,
+    section.framework .table > tbody > tr > td,
+    section.framework .table > tfoot > tr > th,
+    section.framework .table > tfoot > tr > td {
+      padding: 8px;
+      line-height: 1.42857;
+      vertical-align: top;
+      border-top: 1px solid #dddddd; }
+    /* line 35, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+    section.framework .table > thead > tr > th {
+      vertical-align: bottom;
+      border-bottom: 2px solid #dddddd; }
+    /* line 45, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+    section.framework .table > caption + thead > tr:first-child > th,
+    section.framework .table > caption + thead > tr:first-child > td,
+    section.framework .table > colgroup + thead > tr:first-child > th,
+    section.framework .table > colgroup + thead > tr:first-child > td,
+    section.framework .table > thead:first-child > tr:first-child > th,
+    section.framework .table > thead:first-child > tr:first-child > td {
+      border-top: 0; }
+    /* line 51, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+    section.framework .table > tbody + tbody {
+      border-top: 2px solid #dddddd; }
+    /* line 56, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+    section.framework .table .table {
+      background-color: white; }
+  /* line 70, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+  section.framework .table-condensed > thead > tr > th,
+  section.framework .table-condensed > thead > tr > td,
+  section.framework .table-condensed > tbody > tr > th,
+  section.framework .table-condensed > tbody > tr > td,
+  section.framework .table-condensed > tfoot > tr > th,
+  section.framework .table-condensed > tfoot > tr > td {
+    padding: 5px; }
+  /* line 82, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+  section.framework .table-bordered {
+    border: 1px solid #dddddd; }
+    /* line 89, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+    section.framework .table-bordered > thead > tr > th,
+    section.framework .table-bordered > thead > tr > td,
+    section.framework .table-bordered > tbody > tr > th,
+    section.framework .table-bordered > tbody > tr > td,
+    section.framework .table-bordered > tfoot > tr > th,
+    section.framework .table-bordered > tfoot > tr > td {
+      border: 1px solid #dddddd; }
+    /* line 96, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+    section.framework .table-bordered > thead > tr > th,
+    section.framework .table-bordered > thead > tr > td {
+      border-bottom-width: 2px; }
+  /* line 110, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+  section.framework .table-striped > tbody > tr:nth-child(odd) > td,
+  section.framework .table-striped > tbody > tr:nth-child(odd) > th {
+    background-color: #f9f9f9; }
+  /* line 124, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+  section.framework .table-hover > tbody > tr:hover > td,
+  section.framework .table-hover > tbody > tr:hover > th {
+    background-color: whitesmoke; }
+  /* line 135, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+  section.framework table col[class*="col-"] {
+    position: static;
+    float: none;
+    display: table-column; }
+  /* line 143, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+  section.framework table td[class*="col-"],
+  section.framework table th[class*="col-"] {
+    position: static;
+    float: none;
+    display: table-cell; }
+  /* line 12, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_table-row.scss */
+  section.framework .table > thead > tr > td.active,
+  section.framework .table > thead > tr > th.active, section.framework .table > thead > tr.active > td, section.framework .table > thead > tr.active > th,
+  section.framework .table > tbody > tr > td.active,
+  section.framework .table > tbody > tr > th.active,
+  section.framework .table > tbody > tr.active > td,
+  section.framework .table > tbody > tr.active > th,
+  section.framework .table > tfoot > tr > td.active,
+  section.framework .table > tfoot > tr > th.active,
+  section.framework .table > tfoot > tr.active > td,
+  section.framework .table > tfoot > tr.active > th {
+    background-color: whitesmoke; }
+  /* line 24, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_table-row.scss */
+  section.framework .table-hover > tbody > tr > td.active:hover,
+  section.framework .table-hover > tbody > tr > th.active:hover, section.framework .table-hover > tbody > tr.active:hover > td, section.framework .table-hover > tbody > tr:hover > .active, section.framework .table-hover > tbody > tr.active:hover > th {
+    background-color: #e8e8e8; }
+  /* line 12, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_table-row.scss */
+  section.framework .table > thead > tr > td.success,
+  section.framework .table > thead > tr > th.success, section.framework .table > thead > tr.success > td, section.framework .table > thead > tr.success > th,
+  section.framework .table > tbody > tr > td.success,
+  section.framework .table > tbody > tr > th.success,
+  section.framework .table > tbody > tr.success > td,
+  section.framework .table > tbody > tr.success > th,
+  section.framework .table > tfoot > tr > td.success,
+  section.framework .table > tfoot > tr > th.success,
+  section.framework .table > tfoot > tr.success > td,
+  section.framework .table > tfoot > tr.success > th {
+    background-color: #dff0d8; }
+  /* line 24, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_table-row.scss */
+  section.framework .table-hover > tbody > tr > td.success:hover,
+  section.framework .table-hover > tbody > tr > th.success:hover, section.framework .table-hover > tbody > tr.success:hover > td, section.framework .table-hover > tbody > tr:hover > .success, section.framework .table-hover > tbody > tr.success:hover > th {
+    background-color: #d0e9c6; }
+  /* line 12, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_table-row.scss */
+  section.framework .table > thead > tr > td.info,
+  section.framework .table > thead > tr > th.info, section.framework .table > thead > tr.info > td, section.framework .table > thead > tr.info > th,
+  section.framework .table > tbody > tr > td.info,
+  section.framework .table > tbody > tr > th.info,
+  section.framework .table > tbody > tr.info > td,
+  section.framework .table > tbody > tr.info > th,
+  section.framework .table > tfoot > tr > td.info,
+  section.framework .table > tfoot > tr > th.info,
+  section.framework .table > tfoot > tr.info > td,
+  section.framework .table > tfoot > tr.info > th {
+    background-color: #d9edf7; }
+  /* line 24, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_table-row.scss */
+  section.framework .table-hover > tbody > tr > td.info:hover,
+  section.framework .table-hover > tbody > tr > th.info:hover, section.framework .table-hover > tbody > tr.info:hover > td, section.framework .table-hover > tbody > tr:hover > .info, section.framework .table-hover > tbody > tr.info:hover > th {
+    background-color: #c4e3f3; }
+  /* line 12, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_table-row.scss */
+  section.framework .table > thead > tr > td.warning,
+  section.framework .table > thead > tr > th.warning, section.framework .table > thead > tr.warning > td, section.framework .table > thead > tr.warning > th,
+  section.framework .table > tbody > tr > td.warning,
+  section.framework .table > tbody > tr > th.warning,
+  section.framework .table > tbody > tr.warning > td,
+  section.framework .table > tbody > tr.warning > th,
+  section.framework .table > tfoot > tr > td.warning,
+  section.framework .table > tfoot > tr > th.warning,
+  section.framework .table > tfoot > tr.warning > td,
+  section.framework .table > tfoot > tr.warning > th {
+    background-color: #fcf8e3; }
+  /* line 24, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_table-row.scss */
+  section.framework .table-hover > tbody > tr > td.warning:hover,
+  section.framework .table-hover > tbody > tr > th.warning:hover, section.framework .table-hover > tbody > tr.warning:hover > td, section.framework .table-hover > tbody > tr:hover > .warning, section.framework .table-hover > tbody > tr.warning:hover > th {
+    background-color: #faf2cc; }
+  /* line 12, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_table-row.scss */
+  section.framework .table > thead > tr > td.danger,
+  section.framework .table > thead > tr > th.danger, section.framework .table > thead > tr.danger > td, section.framework .table > thead > tr.danger > th,
+  section.framework .table > tbody > tr > td.danger,
+  section.framework .table > tbody > tr > th.danger,
+  section.framework .table > tbody > tr.danger > td,
+  section.framework .table > tbody > tr.danger > th,
+  section.framework .table > tfoot > tr > td.danger,
+  section.framework .table > tfoot > tr > th.danger,
+  section.framework .table > tfoot > tr.danger > td,
+  section.framework .table > tfoot > tr.danger > th {
+    background-color: #f2dede; }
+  /* line 24, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_table-row.scss */
+  section.framework .table-hover > tbody > tr > td.danger:hover,
+  section.framework .table-hover > tbody > tr > th.danger:hover, section.framework .table-hover > tbody > tr.danger:hover > td, section.framework .table-hover > tbody > tr:hover > .danger, section.framework .table-hover > tbody > tr.danger:hover > th {
+    background-color: #ebcccc; }
+  @media screen and (max-width: 767px) {
+    /* line 171, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+    section.framework .table-responsive {
+      width: 100%;
+      margin-bottom: 15px;
+      overflow-y: hidden;
+      overflow-x: auto;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      border: 1px solid #dddddd;
+      -webkit-overflow-scrolling: touch; }
+      /* line 182, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+      section.framework .table-responsive > .table {
+        margin-bottom: 0; }
+        /* line 191, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+        section.framework .table-responsive > .table > thead > tr > th,
+        section.framework .table-responsive > .table > thead > tr > td,
+        section.framework .table-responsive > .table > tbody > tr > th,
+        section.framework .table-responsive > .table > tbody > tr > td,
+        section.framework .table-responsive > .table > tfoot > tr > th,
+        section.framework .table-responsive > .table > tfoot > tr > td {
+          white-space: nowrap; }
+      /* line 199, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+      section.framework .table-responsive > .table-bordered {
+        border: 0; }
+        /* line 208, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+        section.framework .table-responsive > .table-bordered > thead > tr > th:first-child,
+        section.framework .table-responsive > .table-bordered > thead > tr > td:first-child,
+        section.framework .table-responsive > .table-bordered > tbody > tr > th:first-child,
+        section.framework .table-responsive > .table-bordered > tbody > tr > td:first-child,
+        section.framework .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+        section.framework .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+          border-left: 0; }
+        /* line 212, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+        section.framework .table-responsive > .table-bordered > thead > tr > th:last-child,
+        section.framework .table-responsive > .table-bordered > thead > tr > td:last-child,
+        section.framework .table-responsive > .table-bordered > tbody > tr > th:last-child,
+        section.framework .table-responsive > .table-bordered > tbody > tr > td:last-child,
+        section.framework .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+        section.framework .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+          border-right: 0; }
+        /* line 225, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_tables.scss */
+        section.framework .table-responsive > .table-bordered > tbody > tr:last-child > th,
+        section.framework .table-responsive > .table-bordered > tbody > tr:last-child > td,
+        section.framework .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+        section.framework .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+          border-bottom: 0; } }
+  /* line 10, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework fieldset {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    min-width: 0; }
+  /* line 20, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: inherit;
+    color: #333333;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5; }
+  /* line 32, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold; }
+  /* line 47, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework input[type="search"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  /* line 53, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework input[type="radio"],
+  section.framework input[type="checkbox"] {
+    margin: 4px 0 0;
+    margin-top: 1px \9;
+    line-height: normal; }
+  /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework input[type="file"] {
+    display: block; }
+  /* line 65, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework input[type="range"] {
+    display: block;
+    width: 100%; }
+  /* line 72, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework select[multiple],
+  section.framework select[size] {
+    height: auto; }
+  /* line 79, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework input[type="file"]:focus,
+  section.framework input[type="radio"]:focus,
+  section.framework input[type="checkbox"]:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+  /* line 84, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework output {
+    display: block;
+    padding-top: 7px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555555; }
+  /* line 115, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555555;
+    background-color: white;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+    /* line 53, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+    section.framework .form-control:focus {
+      border-color: #66afe9;
+      outline: 0;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+    /* line 102, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_vendor-prefixes.scss */
+    section.framework .form-control::-moz-placeholder {
+      color: #777777;
+      opacity: 1; }
+    /* line 104, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_vendor-prefixes.scss */
+    section.framework .form-control:-ms-input-placeholder {
+      color: #777777; }
+    /* line 105, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_vendor-prefixes.scss */
+    section.framework .form-control::-webkit-input-placeholder {
+      color: #777777; }
+    /* line 143, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+    section.framework .form-control[disabled], section.framework .form-control[readonly], fieldset[disabled] section.framework .form-control {
+      cursor: not-allowed;
+      background-color: #eeeeee;
+      opacity: 1; }
+  /* line 153, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework textarea.form-control {
+    height: auto; }
+  /* line 165, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework input[type="search"] {
+    -webkit-appearance: none; }
+  /* line 181, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework input[type="date"],
+  section.framework input[type="time"],
+  section.framework input[type="datetime-local"],
+  section.framework input[type="month"] {
+    line-height: 34px;
+    line-height: 1.42857 \0; }
+    /* line 186, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+    section.framework input[type="date"].input-sm, section.framework .form-horizontal .form-group-sm input[type="date"].form-control,
+    section.framework input[type="time"].input-sm,
+    section.framework .form-horizontal .form-group-sm input[type="time"].form-control,
+    section.framework input[type="datetime-local"].input-sm,
+    section.framework .form-horizontal .form-group-sm input[type="datetime-local"].form-control,
+    section.framework input[type="month"].input-sm,
+    section.framework .form-horizontal .form-group-sm input[type="month"].form-control {
+      line-height: 30px; }
+    /* line 189, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+    section.framework input[type="date"].input-lg, section.framework .form-horizontal .form-group-lg input[type="date"].form-control,
+    section.framework input[type="time"].input-lg,
+    section.framework .form-horizontal .form-group-lg input[type="time"].form-control,
+    section.framework input[type="datetime-local"].input-lg,
+    section.framework .form-horizontal .form-group-lg input[type="datetime-local"].form-control,
+    section.framework input[type="month"].input-lg,
+    section.framework .form-horizontal .form-group-lg input[type="month"].form-control {
+      line-height: 46px; }
+  /* line 200, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework .form-group {
+    margin-bottom: 15px; }
+  /* line 210, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework .radio,
+  section.framework .checkbox {
+    position: relative;
+    display: block;
+    min-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    /* line 217, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+    section.framework .radio label,
+    section.framework .checkbox label {
+      padding-left: 20px;
+      margin-bottom: 0;
+      font-weight: normal;
+      cursor: pointer; }
+  /* line 227, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework .radio input[type="radio"],
+  section.framework .radio-inline input[type="radio"],
+  section.framework .checkbox input[type="checkbox"],
+  section.framework .checkbox-inline input[type="checkbox"] {
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 4px \9; }
+  /* line 234, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework .radio + .radio,
+  section.framework .checkbox + .checkbox {
+    margin-top: -5px; }
+  /* line 240, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework .radio-inline,
+  section.framework .checkbox-inline {
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 0;
+    vertical-align: middle;
+    font-weight: normal;
+    cursor: pointer; }
+  /* line 249, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework .radio-inline + .radio-inline,
+  section.framework .checkbox-inline + .checkbox-inline {
+    margin-top: 0;
+    margin-left: 10px; }
+  /* line 262, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework input[type="radio"][disabled], section.framework input[type="radio"].disabled, fieldset[disabled] section.framework input[type="radio"],
+  section.framework input[type="checkbox"][disabled],
+  section.framework input[type="checkbox"].disabled, fieldset[disabled]
+  section.framework input[type="checkbox"] {
+    cursor: not-allowed; }
+  /* line 270, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework .radio-inline.disabled, fieldset[disabled] section.framework .radio-inline,
+  section.framework .checkbox-inline.disabled, fieldset[disabled]
+  section.framework .checkbox-inline {
+    cursor: not-allowed; }
+  /* line 279, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework .radio.disabled label, fieldset[disabled] section.framework .radio label,
+  section.framework .checkbox.disabled label, fieldset[disabled]
+  section.framework .checkbox label {
+    cursor: not-allowed; }
+  /* line 291, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework .form-control-static {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 0; }
+    /* line 299, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+    section.framework .form-control-static.input-lg, section.framework .form-horizontal .form-group-lg .form-control-static.form-control, section.framework .form-control-static.input-sm, section.framework .form-horizontal .form-group-sm .form-control-static.form-control {
+      padding-left: 0;
+      padding-right: 0; }
+  /* line 67, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+  section.framework .input-sm, section.framework .form-horizontal .form-group-sm .form-control {
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px; }
+  /* line 75, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+  section.framework select.input-sm, section.framework .form-horizontal .form-group-sm select.form-control {
+    height: 30px;
+    line-height: 30px; }
+  /* line 81, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+  section.framework textarea.input-sm, section.framework .form-horizontal .form-group-sm textarea.form-control,
+  section.framework select[multiple].input-sm,
+  section.framework .form-horizontal .form-group-sm select[multiple].form-control {
+    height: auto; }
+  /* line 67, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+  section.framework .input-lg, section.framework .form-horizontal .form-group-lg .form-control {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px; }
+  /* line 75, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+  section.framework select.input-lg, section.framework .form-horizontal .form-group-lg select.form-control {
+    height: 46px;
+    line-height: 46px; }
+  /* line 81, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+  section.framework textarea.input-lg, section.framework .form-horizontal .form-group-lg textarea.form-control,
+  section.framework select[multiple].input-lg,
+  section.framework .form-horizontal .form-group-lg select[multiple].form-control {
+    height: auto; }
+  /* line 320, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework .has-feedback {
+    position: relative; }
+    /* line 325, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+    section.framework .has-feedback .form-control {
+      padding-right: 42.5px; }
+  /* line 330, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework .form-control-feedback {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center; }
+  /* line 341, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework .input-lg + .form-control-feedback, section.framework .form-horizontal .form-group-lg .form-control + .form-control-feedback {
+    width: 46px;
+    height: 46px;
+    line-height: 46px; }
+  /* line 346, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework .input-sm + .form-control-feedback, section.framework .form-horizontal .form-group-sm .form-control + .form-control-feedback {
+    width: 30px;
+    height: 30px;
+    line-height: 30px; }
+  /* line 13, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+  section.framework .has-success .help-block,
+  section.framework .has-success .control-label,
+  section.framework .has-success .radio,
+  section.framework .has-success .checkbox,
+  section.framework .has-success .radio-inline,
+  section.framework .has-success .checkbox-inline {
+    color: #3c763d; }
+  /* line 17, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+  section.framework .has-success .form-control {
+    border-color: #3c763d;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+    /* line 20, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+    section.framework .has-success .form-control:focus {
+      border-color: #2b542c;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168; }
+  /* line 27, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+  section.framework .has-success .input-group-addon {
+    color: #3c763d;
+    border-color: #3c763d;
+    background-color: #dff0d8; }
+  /* line 33, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+  section.framework .has-success .form-control-feedback {
+    color: #3c763d; }
+  /* line 13, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+  section.framework .has-warning .help-block,
+  section.framework .has-warning .control-label,
+  section.framework .has-warning .radio,
+  section.framework .has-warning .checkbox,
+  section.framework .has-warning .radio-inline,
+  section.framework .has-warning .checkbox-inline {
+    color: #8a6d3b; }
+  /* line 17, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+  section.framework .has-warning .form-control {
+    border-color: #8a6d3b;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+    /* line 20, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+    section.framework .has-warning .form-control:focus {
+      border-color: #66512c;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b; }
+  /* line 27, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+  section.framework .has-warning .input-group-addon {
+    color: #8a6d3b;
+    border-color: #8a6d3b;
+    background-color: #fcf8e3; }
+  /* line 33, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+  section.framework .has-warning .form-control-feedback {
+    color: #8a6d3b; }
+  /* line 13, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+  section.framework .has-error .help-block,
+  section.framework .has-error .control-label,
+  section.framework .has-error .radio,
+  section.framework .has-error .checkbox,
+  section.framework .has-error .radio-inline,
+  section.framework .has-error .checkbox-inline {
+    color: #a94442; }
+  /* line 17, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+  section.framework .has-error .form-control {
+    border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+    /* line 20, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+    section.framework .has-error .form-control:focus {
+      border-color: #843534;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483; }
+  /* line 27, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+  section.framework .has-error .input-group-addon {
+    color: #a94442;
+    border-color: #a94442;
+    background-color: #f2dede; }
+  /* line 33, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_forms.scss */
+  section.framework .has-error .form-control-feedback {
+    color: #a94442; }
+  /* line 365, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework .has-feedback label.sr-only ~ .form-control-feedback {
+    top: 0; }
+  /* line 375, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework .help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #737373; }
+  @media (min-width: 768px) {
+    /* line 400, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+    section.framework .form-inline .form-group {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle; }
+    /* line 407, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+    section.framework .form-inline .form-control {
+      display: inline-block;
+      width: auto;
+      vertical-align: middle; }
+    /* line 413, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+    section.framework .form-inline .input-group {
+      display: inline-table;
+      vertical-align: middle; }
+      /* line 419, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+      section.framework .form-inline .input-group .input-group-addon,
+      section.framework .form-inline .input-group .input-group-btn,
+      section.framework .form-inline .input-group .form-control {
+        width: auto; }
+    /* line 425, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+    section.framework .form-inline .input-group > .form-control {
+      width: 100%; }
+    /* line 429, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+    section.framework .form-inline .control-label {
+      margin-bottom: 0;
+      vertical-align: middle; }
+    /* line 438, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+    section.framework .form-inline .radio,
+    section.framework .form-inline .checkbox {
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 0;
+      vertical-align: middle; }
+      /* line 444, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+      section.framework .form-inline .radio label,
+      section.framework .form-inline .checkbox label {
+        padding-left: 0; }
+    /* line 449, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+    section.framework .form-inline .radio input[type="radio"],
+    section.framework .form-inline .checkbox input[type="checkbox"] {
+      position: relative;
+      margin-left: 0; }
+    /* line 458, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+    section.framework .form-inline .has-feedback .form-control-feedback {
+      top: 0; } }
+  /* line 478, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework .form-horizontal .radio,
+  section.framework .form-horizontal .checkbox,
+  section.framework .form-horizontal .radio-inline,
+  section.framework .form-horizontal .checkbox-inline {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 7px; }
+  /* line 486, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework .form-horizontal .radio,
+  section.framework .form-horizontal .checkbox {
+    min-height: 27px; }
+  /* line 491, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework .form-horizontal .form-group {
+    margin-left: -15px;
+    margin-right: -15px; }
+    /* line 15, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+    section.framework .form-horizontal .form-group:before, section.framework .form-horizontal .form-group:after {
+      content: " ";
+      display: table; }
+    /* line 19, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+    section.framework .form-horizontal .form-group:after {
+      clear: both; }
+  @media (min-width: 768px) {
+    /* line 498, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+    section.framework .form-horizontal .control-label {
+      text-align: right;
+      margin-bottom: 0;
+      padding-top: 7px; } }
+  /* line 509, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+  section.framework .form-horizontal .has-feedback .form-control-feedback {
+    top: 0;
+    right: 15px; }
+  @media (min-width: 768px) {
+    /* line 520, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+    section.framework .form-horizontal .form-group-lg .control-label {
+      padding-top: 14.3px; } }
+  @media (min-width: 768px) {
+    /* line 530, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
+    section.framework .form-horizontal .form-group-sm .control-label {
+      padding-top: 6px; } }
+  /* line 9, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+  section.framework .btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    /* line 25, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+    section.framework .btn:focus, section.framework .btn:active:focus, section.framework .btn.active:focus {
+      outline: thin dotted;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+    /* line 31, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+    section.framework .btn:hover, section.framework .btn:focus {
+      color: #333333;
+      text-decoration: none; }
+    /* line 37, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+    section.framework .btn:active, section.framework .btn.active {
+      outline: 0;
+      background-image: none;
+      -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+    /* line 45, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+    section.framework .btn.disabled, section.framework .btn[disabled], fieldset[disabled] section.framework .btn {
+      cursor: not-allowed;
+      pointer-events: none;
+      opacity: 0.65;
+      filter: alpha(opacity=65);
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  /* line 57, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+  section.framework .btn-default {
+    color: #333333;
+    background-color: white;
+    border-color: #cccccc; }
+    /* line 15, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-default:hover, section.framework .btn-default:focus, section.framework .btn-default:active, section.framework .btn-default.active, .open > section.framework .btn-default.dropdown-toggle {
+      color: #333333;
+      background-color: #e6e6e6;
+      border-color: #adadad; }
+    /* line 22, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-default:active, section.framework .btn-default.active, .open > section.framework .btn-default.dropdown-toggle {
+      background-image: none; }
+    /* line 32, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-default.disabled, section.framework .btn-default.disabled:hover, section.framework .btn-default.disabled:focus, section.framework .btn-default.disabled:active, section.framework .btn-default.disabled.active, section.framework .btn-default[disabled], section.framework .btn-default[disabled]:hover, section.framework .btn-default[disabled]:focus, section.framework .btn-default[disabled]:active, section.framework .btn-default[disabled].active, fieldset[disabled] section.framework .btn-default, fieldset[disabled] section.framework .btn-default:hover, fieldset[disabled] section.framework .btn-default:focus, fieldset[disabled] section.framework .btn-default:active, fieldset[disabled] section.framework .btn-default.active {
+      background-color: white;
+      border-color: #cccccc; }
+    /* line 38, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-default .badge {
+      color: white;
+      background-color: #333333; }
+  /* line 60, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+  section.framework .btn-primary {
+    color: white;
+    background-color: #428bca;
+    border-color: #357ebd; }
+    /* line 15, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-primary:hover, section.framework .btn-primary:focus, section.framework .btn-primary:active, section.framework .btn-primary.active, .open > section.framework .btn-primary.dropdown-toggle {
+      color: white;
+      background-color: #3071a9;
+      border-color: #285e8e; }
+    /* line 22, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-primary:active, section.framework .btn-primary.active, .open > section.framework .btn-primary.dropdown-toggle {
+      background-image: none; }
+    /* line 32, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-primary.disabled, section.framework .btn-primary.disabled:hover, section.framework .btn-primary.disabled:focus, section.framework .btn-primary.disabled:active, section.framework .btn-primary.disabled.active, section.framework .btn-primary[disabled], section.framework .btn-primary[disabled]:hover, section.framework .btn-primary[disabled]:focus, section.framework .btn-primary[disabled]:active, section.framework .btn-primary[disabled].active, fieldset[disabled] section.framework .btn-primary, fieldset[disabled] section.framework .btn-primary:hover, fieldset[disabled] section.framework .btn-primary:focus, fieldset[disabled] section.framework .btn-primary:active, fieldset[disabled] section.framework .btn-primary.active {
+      background-color: #428bca;
+      border-color: #357ebd; }
+    /* line 38, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-primary .badge {
+      color: #428bca;
+      background-color: white; }
+  /* line 64, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+  section.framework .btn-success {
+    color: white;
+    background-color: #5cb85c;
+    border-color: #4cae4c; }
+    /* line 15, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-success:hover, section.framework .btn-success:focus, section.framework .btn-success:active, section.framework .btn-success.active, .open > section.framework .btn-success.dropdown-toggle {
+      color: white;
+      background-color: #449d44;
+      border-color: #398439; }
+    /* line 22, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-success:active, section.framework .btn-success.active, .open > section.framework .btn-success.dropdown-toggle {
+      background-image: none; }
+    /* line 32, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-success.disabled, section.framework .btn-success.disabled:hover, section.framework .btn-success.disabled:focus, section.framework .btn-success.disabled:active, section.framework .btn-success.disabled.active, section.framework .btn-success[disabled], section.framework .btn-success[disabled]:hover, section.framework .btn-success[disabled]:focus, section.framework .btn-success[disabled]:active, section.framework .btn-success[disabled].active, fieldset[disabled] section.framework .btn-success, fieldset[disabled] section.framework .btn-success:hover, fieldset[disabled] section.framework .btn-success:focus, fieldset[disabled] section.framework .btn-success:active, fieldset[disabled] section.framework .btn-success.active {
+      background-color: #5cb85c;
+      border-color: #4cae4c; }
+    /* line 38, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-success .badge {
+      color: #5cb85c;
+      background-color: white; }
+  /* line 68, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+  section.framework .btn-info {
+    color: white;
+    background-color: #5bc0de;
+    border-color: #46b8da; }
+    /* line 15, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-info:hover, section.framework .btn-info:focus, section.framework .btn-info:active, section.framework .btn-info.active, .open > section.framework .btn-info.dropdown-toggle {
+      color: white;
+      background-color: #31b0d5;
+      border-color: #269abc; }
+    /* line 22, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-info:active, section.framework .btn-info.active, .open > section.framework .btn-info.dropdown-toggle {
+      background-image: none; }
+    /* line 32, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-info.disabled, section.framework .btn-info.disabled:hover, section.framework .btn-info.disabled:focus, section.framework .btn-info.disabled:active, section.framework .btn-info.disabled.active, section.framework .btn-info[disabled], section.framework .btn-info[disabled]:hover, section.framework .btn-info[disabled]:focus, section.framework .btn-info[disabled]:active, section.framework .btn-info[disabled].active, fieldset[disabled] section.framework .btn-info, fieldset[disabled] section.framework .btn-info:hover, fieldset[disabled] section.framework .btn-info:focus, fieldset[disabled] section.framework .btn-info:active, fieldset[disabled] section.framework .btn-info.active {
+      background-color: #5bc0de;
+      border-color: #46b8da; }
+    /* line 38, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-info .badge {
+      color: #5bc0de;
+      background-color: white; }
+  /* line 72, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+  section.framework .btn-warning {
+    color: white;
+    background-color: #f0ad4e;
+    border-color: #eea236; }
+    /* line 15, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-warning:hover, section.framework .btn-warning:focus, section.framework .btn-warning:active, section.framework .btn-warning.active, .open > section.framework .btn-warning.dropdown-toggle {
+      color: white;
+      background-color: #ec971f;
+      border-color: #d58512; }
+    /* line 22, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-warning:active, section.framework .btn-warning.active, .open > section.framework .btn-warning.dropdown-toggle {
+      background-image: none; }
+    /* line 32, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-warning.disabled, section.framework .btn-warning.disabled:hover, section.framework .btn-warning.disabled:focus, section.framework .btn-warning.disabled:active, section.framework .btn-warning.disabled.active, section.framework .btn-warning[disabled], section.framework .btn-warning[disabled]:hover, section.framework .btn-warning[disabled]:focus, section.framework .btn-warning[disabled]:active, section.framework .btn-warning[disabled].active, fieldset[disabled] section.framework .btn-warning, fieldset[disabled] section.framework .btn-warning:hover, fieldset[disabled] section.framework .btn-warning:focus, fieldset[disabled] section.framework .btn-warning:active, fieldset[disabled] section.framework .btn-warning.active {
+      background-color: #f0ad4e;
+      border-color: #eea236; }
+    /* line 38, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-warning .badge {
+      color: #f0ad4e;
+      background-color: white; }
+  /* line 76, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+  section.framework .btn-danger {
+    color: white;
+    background-color: #d9534f;
+    border-color: #d43f3a; }
+    /* line 15, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-danger:hover, section.framework .btn-danger:focus, section.framework .btn-danger:active, section.framework .btn-danger.active, .open > section.framework .btn-danger.dropdown-toggle {
+      color: white;
+      background-color: #c9302c;
+      border-color: #ac2925; }
+    /* line 22, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-danger:active, section.framework .btn-danger.active, .open > section.framework .btn-danger.dropdown-toggle {
+      background-image: none; }
+    /* line 32, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-danger.disabled, section.framework .btn-danger.disabled:hover, section.framework .btn-danger.disabled:focus, section.framework .btn-danger.disabled:active, section.framework .btn-danger.disabled.active, section.framework .btn-danger[disabled], section.framework .btn-danger[disabled]:hover, section.framework .btn-danger[disabled]:focus, section.framework .btn-danger[disabled]:active, section.framework .btn-danger[disabled].active, fieldset[disabled] section.framework .btn-danger, fieldset[disabled] section.framework .btn-danger:hover, fieldset[disabled] section.framework .btn-danger:focus, fieldset[disabled] section.framework .btn-danger:active, fieldset[disabled] section.framework .btn-danger.active {
+      background-color: #d9534f;
+      border-color: #d43f3a; }
+    /* line 38, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
+    section.framework .btn-danger .badge {
+      color: #d9534f;
+      background-color: white; }
+  /* line 85, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+  section.framework .btn-link {
+    color: #428bca;
+    font-weight: normal;
+    cursor: pointer;
+    border-radius: 0; }
+    /* line 94, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+    section.framework .btn-link, section.framework .btn-link:active, section.framework .btn-link[disabled], fieldset[disabled] section.framework .btn-link {
+      background-color: transparent;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    /* line 101, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+    section.framework .btn-link, section.framework .btn-link:hover, section.framework .btn-link:focus, section.framework .btn-link:active {
+      border-color: transparent; }
+    /* line 105, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+    section.framework .btn-link:hover, section.framework .btn-link:focus {
+      color: #2a6496;
+      text-decoration: underline;
+      background-color: transparent; }
+    /* line 113, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+    section.framework .btn-link[disabled]:hover, section.framework .btn-link[disabled]:focus, fieldset[disabled] section.framework .btn-link:hover, fieldset[disabled] section.framework .btn-link:focus {
+      color: #777777;
+      text-decoration: none; }
+  /* line 124, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+  section.framework .btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px; }
+  /* line 128, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+  section.framework .btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px; }
+  /* line 132, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+  section.framework .btn-xs {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px; }
+  /* line 140, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+  section.framework .btn-block {
+    display: block;
+    width: 100%; }
+  /* line 146, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+  section.framework .btn-block + .btn-block {
+    margin-top: 5px; }
+  /* line 154, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
+  section.framework input[type="submit"].btn-block,
+  section.framework input[type="reset"].btn-block,
+  section.framework input[type="button"].btn-block {
+    width: 100%; }
+  /* line 7, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .panel {
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
+  /* line 16, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .panel-body {
+    padding: 15px; }
+    /* line 15, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+    section.framework .panel-body:before, section.framework .panel-body:after {
+      content: " ";
+      display: table; }
+    /* line 19, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+    section.framework .panel-body:after {
+      clear: both; }
+  /* line 22, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px; }
+    /* line 27, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+    section.framework .panel-heading > .dropdown .dropdown-toggle {
+      color: inherit; }
+  /* line 33, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit; }
+    /* line 39, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+    section.framework .panel-title > a {
+      color: inherit; }
+  /* line 45, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .panel-footer {
+    padding: 10px 15px;
+    background-color: whitesmoke;
+    border-top: 1px solid #dddddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px; }
+  /* line 59, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .panel > .list-group {
+    margin-bottom: 0; }
+    /* line 62, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+    section.framework .panel > .list-group .list-group-item {
+      border-width: 1px 0;
+      border-radius: 0; }
+    /* line 69, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+    section.framework .panel > .list-group:first-child .list-group-item:first-child {
+      border-top: 0;
+      border-top-right-radius: 3px;
+      border-top-left-radius: 3px; }
+    /* line 76, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+    section.framework .panel > .list-group:last-child .list-group-item:last-child {
+      border-bottom: 0;
+      border-bottom-right-radius: 3px;
+      border-bottom-left-radius: 3px; }
+  /* line 85, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .panel-heading + .list-group .list-group-item:first-child {
+    border-top-width: 0; }
+  /* line 89, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .list-group + .panel-footer {
+    border-top-width: 0; }
+  /* line 101, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .panel > .table,
+  section.framework .panel > .table-responsive > .table,
+  section.framework .panel > .panel-collapse > .table {
+    margin-bottom: 0; }
+  /* line 106, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .panel > .table:first-child,
+  section.framework .panel > .table-responsive:first-child > .table:first-child {
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px; }
+    /* line 113, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+    section.framework .panel > .table:first-child > thead:first-child > tr:first-child td:first-child,
+    section.framework .panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
+    section.framework .panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+    section.framework .panel > .table:first-child > tbody:first-child > tr:first-child th:first-child,
+    section.framework .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
+    section.framework .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
+    section.framework .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+    section.framework .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
+      border-top-left-radius: 3px; }
+    /* line 117, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+    section.framework .panel > .table:first-child > thead:first-child > tr:first-child td:last-child,
+    section.framework .panel > .table:first-child > thead:first-child > tr:first-child th:last-child,
+    section.framework .panel > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+    section.framework .panel > .table:first-child > tbody:first-child > tr:first-child th:last-child,
+    section.framework .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
+    section.framework .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
+    section.framework .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+    section.framework .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
+      border-top-right-radius: 3px; }
+  /* line 125, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .panel > .table:last-child,
+  section.framework .panel > .table-responsive:last-child > .table:last-child {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px; }
+    /* line 132, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+    section.framework .panel > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+    section.framework .panel > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+    section.framework .panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+    section.framework .panel > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
+    section.framework .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+    section.framework .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+    section.framework .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+    section.framework .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {
+      border-bottom-left-radius: 3px; }
+    /* line 136, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+    section.framework .panel > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+    section.framework .panel > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+    section.framework .panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+    section.framework .panel > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
+    section.framework .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+    section.framework .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+    section.framework .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+    section.framework .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {
+      border-bottom-right-radius: 3px; }
+  /* line 143, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .panel > .panel-body + .table,
+  section.framework .panel > .panel-body + .table-responsive {
+    border-top: 1px solid #dddddd; }
+  /* line 147, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .panel > .table > tbody:first-child > tr:first-child th,
+  section.framework .panel > .table > tbody:first-child > tr:first-child td {
+    border-top: 0; }
+  /* line 151, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .panel > .table-bordered,
+  section.framework .panel > .table-responsive > .table-bordered {
+    border: 0; }
+    /* line 158, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+    section.framework .panel > .table-bordered > thead > tr > th:first-child,
+    section.framework .panel > .table-bordered > thead > tr > td:first-child,
+    section.framework .panel > .table-bordered > tbody > tr > th:first-child,
+    section.framework .panel > .table-bordered > tbody > tr > td:first-child,
+    section.framework .panel > .table-bordered > tfoot > tr > th:first-child,
+    section.framework .panel > .table-bordered > tfoot > tr > td:first-child,
+    section.framework .panel > .table-responsive > .table-bordered > thead > tr > th:first-child,
+    section.framework .panel > .table-responsive > .table-bordered > thead > tr > td:first-child,
+    section.framework .panel > .table-responsive > .table-bordered > tbody > tr > th:first-child,
+    section.framework .panel > .table-responsive > .table-bordered > tbody > tr > td:first-child,
+    section.framework .panel > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+    section.framework .panel > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+      border-left: 0; }
+    /* line 162, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+    section.framework .panel > .table-bordered > thead > tr > th:last-child,
+    section.framework .panel > .table-bordered > thead > tr > td:last-child,
+    section.framework .panel > .table-bordered > tbody > tr > th:last-child,
+    section.framework .panel > .table-bordered > tbody > tr > td:last-child,
+    section.framework .panel > .table-bordered > tfoot > tr > th:last-child,
+    section.framework .panel > .table-bordered > tfoot > tr > td:last-child,
+    section.framework .panel > .table-responsive > .table-bordered > thead > tr > th:last-child,
+    section.framework .panel > .table-responsive > .table-bordered > thead > tr > td:last-child,
+    section.framework .panel > .table-responsive > .table-bordered > tbody > tr > th:last-child,
+    section.framework .panel > .table-responsive > .table-bordered > tbody > tr > td:last-child,
+    section.framework .panel > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+    section.framework .panel > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+      border-right: 0; }
+    /* line 171, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+    section.framework .panel > .table-bordered > thead > tr:first-child > td,
+    section.framework .panel > .table-bordered > thead > tr:first-child > th,
+    section.framework .panel > .table-bordered > tbody > tr:first-child > td,
+    section.framework .panel > .table-bordered > tbody > tr:first-child > th,
+    section.framework .panel > .table-responsive > .table-bordered > thead > tr:first-child > td,
+    section.framework .panel > .table-responsive > .table-bordered > thead > tr:first-child > th,
+    section.framework .panel > .table-responsive > .table-bordered > tbody > tr:first-child > td,
+    section.framework .panel > .table-responsive > .table-bordered > tbody > tr:first-child > th {
+      border-bottom: 0; }
+    /* line 180, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+    section.framework .panel > .table-bordered > tbody > tr:last-child > td,
+    section.framework .panel > .table-bordered > tbody > tr:last-child > th,
+    section.framework .panel > .table-bordered > tfoot > tr:last-child > td,
+    section.framework .panel > .table-bordered > tfoot > tr:last-child > th,
+    section.framework .panel > .table-responsive > .table-bordered > tbody > tr:last-child > td,
+    section.framework .panel > .table-responsive > .table-bordered > tbody > tr:last-child > th,
+    section.framework .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
+    section.framework .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > th {
+      border-bottom: 0; }
+  /* line 186, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .panel > .table-responsive {
+    border: 0;
+    margin-bottom: 0; }
+  /* line 198, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .panel-group {
+    margin-bottom: 20px; }
+    /* line 202, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+    section.framework .panel-group .panel {
+      margin-bottom: 0;
+      border-radius: 4px; }
+      /* line 205, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+      section.framework .panel-group .panel + .panel {
+        margin-top: 5px; }
+    /* line 210, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+    section.framework .panel-group .panel-heading {
+      border-bottom: 0; }
+      /* line 212, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+      section.framework .panel-group .panel-heading + .panel-collapse > .panel-body {
+        border-top: 1px solid #dddddd; }
+    /* line 216, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+    section.framework .panel-group .panel-footer {
+      border-top: 0; }
+      /* line 218, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+      section.framework .panel-group .panel-footer + .panel-collapse .panel-body {
+        border-bottom: 1px solid #dddddd; }
+  /* line 226, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .panel-default {
+    border-color: #dddddd; }
+    /* line 6, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+    section.framework .panel-default > .panel-heading {
+      color: #333333;
+      background-color: whitesmoke;
+      border-color: #dddddd; }
+      /* line 11, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+      section.framework .panel-default > .panel-heading + .panel-collapse > .panel-body {
+        border-top-color: #dddddd; }
+      /* line 14, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+      section.framework .panel-default > .panel-heading .badge {
+        color: whitesmoke;
+        background-color: #333333; }
+    /* line 20, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+    section.framework .panel-default > .panel-footer + .panel-collapse > .panel-body {
+      border-bottom-color: #dddddd; }
+  /* line 229, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .panel-primary {
+    border-color: #428bca; }
+    /* line 6, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+    section.framework .panel-primary > .panel-heading {
+      color: white;
+      background-color: #428bca;
+      border-color: #428bca; }
+      /* line 11, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+      section.framework .panel-primary > .panel-heading + .panel-collapse > .panel-body {
+        border-top-color: #428bca; }
+      /* line 14, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+      section.framework .panel-primary > .panel-heading .badge {
+        color: #428bca;
+        background-color: white; }
+    /* line 20, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+    section.framework .panel-primary > .panel-footer + .panel-collapse > .panel-body {
+      border-bottom-color: #428bca; }
+  /* line 232, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .panel-success {
+    border-color: #d6e9c6; }
+    /* line 6, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+    section.framework .panel-success > .panel-heading {
+      color: #3c763d;
+      background-color: #dff0d8;
+      border-color: #d6e9c6; }
+      /* line 11, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+      section.framework .panel-success > .panel-heading + .panel-collapse > .panel-body {
+        border-top-color: #d6e9c6; }
+      /* line 14, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+      section.framework .panel-success > .panel-heading .badge {
+        color: #dff0d8;
+        background-color: #3c763d; }
+    /* line 20, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+    section.framework .panel-success > .panel-footer + .panel-collapse > .panel-body {
+      border-bottom-color: #d6e9c6; }
+  /* line 235, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .panel-info {
+    border-color: #bce8f1; }
+    /* line 6, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+    section.framework .panel-info > .panel-heading {
+      color: #31708f;
+      background-color: #d9edf7;
+      border-color: #bce8f1; }
+      /* line 11, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+      section.framework .panel-info > .panel-heading + .panel-collapse > .panel-body {
+        border-top-color: #bce8f1; }
+      /* line 14, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+      section.framework .panel-info > .panel-heading .badge {
+        color: #d9edf7;
+        background-color: #31708f; }
+    /* line 20, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+    section.framework .panel-info > .panel-footer + .panel-collapse > .panel-body {
+      border-bottom-color: #bce8f1; }
+  /* line 238, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .panel-warning {
+    border-color: #faebcc; }
+    /* line 6, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+    section.framework .panel-warning > .panel-heading {
+      color: #8a6d3b;
+      background-color: #fcf8e3;
+      border-color: #faebcc; }
+      /* line 11, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+      section.framework .panel-warning > .panel-heading + .panel-collapse > .panel-body {
+        border-top-color: #faebcc; }
+      /* line 14, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+      section.framework .panel-warning > .panel-heading .badge {
+        color: #fcf8e3;
+        background-color: #8a6d3b; }
+    /* line 20, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+    section.framework .panel-warning > .panel-footer + .panel-collapse > .panel-body {
+      border-bottom-color: #faebcc; }
+  /* line 241, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
+  section.framework .panel-danger {
+    border-color: #ebccd1; }
+    /* line 6, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+    section.framework .panel-danger > .panel-heading {
+      color: #a94442;
+      background-color: #f2dede;
+      border-color: #ebccd1; }
+      /* line 11, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+      section.framework .panel-danger > .panel-heading + .panel-collapse > .panel-body {
+        border-top-color: #ebccd1; }
+      /* line 14, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+      section.framework .panel-danger > .panel-heading .badge {
+        color: #f2dede;
+        background-color: #a94442; }
+    /* line 20, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
+    section.framework .panel-danger > .panel-footer + .panel-collapse > .panel-body {
+      border-bottom-color: #ebccd1; }
+  /* line 15, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  section.framework .clearfix:before, section.framework .clearfix:after {
+    content: " ";
+    display: table; }
+  /* line 19, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  section.framework .clearfix:after {
+    clear: both; }
+  /* line 12, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_utilities.scss */
+  section.framework .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  /* line 15, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_utilities.scss */
+  section.framework .pull-right {
+    float: right !important; }
+  /* line 18, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_utilities.scss */
+  section.framework .pull-left {
+    float: left !important; }
+  /* line 27, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_utilities.scss */
+  section.framework .hide {
+    display: none !important; }
+  /* line 30, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_utilities.scss */
+  section.framework .show {
+    display: block !important; }
+  /* line 33, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_utilities.scss */
+  section.framework .invisible {
+    visibility: hidden; }
+  /* line 36, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_utilities.scss */
+  section.framework .text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0; }
+  /* line 45, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_utilities.scss */
+  section.framework .hidden {
+    display: none !important;
+    visibility: hidden !important; }
+  /* line 54, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_utilities.scss */
+  section.framework .affix {
+    position: fixed;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  /* line 18, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+  section.framework .visible-xs, section.framework .visible-sm, section.framework .visible-md, section.framework .visible-lg {
+    display: none !important; }
+  /* line 42, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+  section.framework .visible-xs-block,
+  section.framework .visible-xs-inline,
+  section.framework .visible-xs-inline-block,
+  section.framework .visible-sm-block,
+  section.framework .visible-sm-inline,
+  section.framework .visible-sm-inline-block,
+  section.framework .visible-md-block,
+  section.framework .visible-md-inline,
+  section.framework .visible-md-inline-block,
+  section.framework .visible-lg-block,
+  section.framework .visible-lg-inline,
+  section.framework .visible-lg-inline-block {
+    display: none !important; }
+  @media (max-width: 767px) {
+    /* line 7, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework .visible-xs {
+      display: block !important; }
+    /* line 10, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework table.visible-xs {
+      display: table; }
+    /* line 11, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework tr.visible-xs {
+      display: table-row !important; }
+    /* line 13, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework th.visible-xs,
+    section.framework td.visible-xs {
+      display: table-cell !important; } }
+  @media (max-width: 767px) {
+    /* line 49, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+    section.framework .visible-xs-block {
+      display: block !important; } }
+  @media (max-width: 767px) {
+    /* line 54, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+    section.framework .visible-xs-inline {
+      display: inline !important; } }
+  @media (max-width: 767px) {
+    /* line 59, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+    section.framework .visible-xs-inline-block {
+      display: inline-block !important; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* line 7, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework .visible-sm {
+      display: block !important; }
+    /* line 10, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework table.visible-sm {
+      display: table; }
+    /* line 11, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework tr.visible-sm {
+      display: table-row !important; }
+    /* line 13, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework th.visible-sm,
+    section.framework td.visible-sm {
+      display: table-cell !important; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* line 68, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+    section.framework .visible-sm-block {
+      display: block !important; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* line 73, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+    section.framework .visible-sm-inline {
+      display: inline !important; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* line 78, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+    section.framework .visible-sm-inline-block {
+      display: inline-block !important; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    /* line 7, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework .visible-md {
+      display: block !important; }
+    /* line 10, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework table.visible-md {
+      display: table; }
+    /* line 11, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework tr.visible-md {
+      display: table-row !important; }
+    /* line 13, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework th.visible-md,
+    section.framework td.visible-md {
+      display: table-cell !important; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    /* line 87, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+    section.framework .visible-md-block {
+      display: block !important; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    /* line 92, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+    section.framework .visible-md-inline {
+      display: inline !important; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    /* line 97, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+    section.framework .visible-md-inline-block {
+      display: inline-block !important; } }
+  @media (min-width: 1200px) {
+    /* line 7, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework .visible-lg {
+      display: block !important; }
+    /* line 10, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework table.visible-lg {
+      display: table; }
+    /* line 11, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework tr.visible-lg {
+      display: table-row !important; }
+    /* line 13, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework th.visible-lg,
+    section.framework td.visible-lg {
+      display: table-cell !important; } }
+  @media (min-width: 1200px) {
+    /* line 106, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+    section.framework .visible-lg-block {
+      display: block !important; } }
+  @media (min-width: 1200px) {
+    /* line 111, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+    section.framework .visible-lg-inline {
+      display: inline !important; } }
+  @media (min-width: 1200px) {
+    /* line 116, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+    section.framework .visible-lg-inline-block {
+      display: inline-block !important; } }
+  @media (max-width: 767px) {
+    /* line 18, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework .hidden-xs {
+      display: none !important; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* line 18, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework .hidden-sm {
+      display: none !important; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    /* line 18, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework .hidden-md {
+      display: none !important; } }
+  @media (min-width: 1200px) {
+    /* line 18, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework .hidden-lg {
+      display: none !important; } }
+  /* line 18, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+  section.framework .visible-print {
+    display: none !important; }
+  @media print {
+    /* line 7, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework .visible-print {
+      display: block !important; }
+    /* line 10, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework table.visible-print {
+      display: table; }
+    /* line 11, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework tr.visible-print {
+      display: table-row !important; }
+    /* line 13, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework th.visible-print,
+    section.framework td.visible-print {
+      display: table-cell !important; } }
+  /* line 150, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+  section.framework .visible-print-block {
+    display: none !important; }
+    @media print {
+      /* line 150, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+      section.framework .visible-print-block {
+        display: block !important; } }
+  /* line 157, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+  section.framework .visible-print-inline {
+    display: none !important; }
+    @media print {
+      /* line 157, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+      section.framework .visible-print-inline {
+        display: inline !important; } }
+  /* line 164, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+  section.framework .visible-print-inline-block {
+    display: none !important; }
+    @media print {
+      /* line 164, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+      section.framework .visible-print-inline-block {
+        display: inline-block !important; } }
+  @media print {
+    /* line 18, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
+    section.framework .hidden-print {
+      display: none !important; } }
+  /* line 11, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_media.scss */
+  section.framework .media,
+  section.framework .media-body {
+    overflow: hidden;
+    zoom: 1; }
+  /* line 18, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_media.scss */
+  section.framework .media,
+  section.framework .media .media {
+    margin-top: 15px; }
+  /* line 21, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_media.scss */
+  section.framework .media:first-child {
+    margin-top: 0; }
+  /* line 26, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_media.scss */
+  section.framework .media-object {
+    display: block; }
+  /* line 31, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_media.scss */
+  section.framework .media-heading {
+    margin: 0 0 5px; }
+  /* line 40, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_media.scss */
+  section.framework .media > .pull-left {
+    margin-right: 10px; }
+  /* line 43, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_media.scss */
+  section.framework .media > .pull-right {
+    margin-left: 10px; }
+  /* line 53, ../../sass/vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_media.scss */
+  section.framework .media-list {
+    padding-left: 0;
+    list-style: none; }
+  /* line 115, ../../sass/_framework.sass */
+  section.framework ul {
+    margin: 0;
+    padding: 0; }
+  /* line 119, ../../sass/_framework.sass */
+  section.framework ul li {
+    list-style-type: none; }
+  /* line 122, ../../sass/_framework.sass */
+  section.framework h2 {
+    margin-top: 5px; }
+  /* line 126, ../../sass/_framework.sass */
+  section.framework .user-avatar-medium img {
+    width: 32px;
+    height: 32px;
+    border-radius: 3px; }
+  /* line 132, ../../sass/_framework.sass */
+  section.framework .user-avatar-large img {
+    width: 90px;
+    height: 90px;
+    border-radius: 6px; }
+  /* line 137, ../../sass/_framework.sass */
+  section.framework .user-profile .user-avatar {
+    margin-top: -45px; }
+
+/* line 109, ../../sass/_final.sass */
+section.final {
+  margin-top: 45px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6em;
+  font-size: 16px; }
+  /* line 139, ../../sass/_final.sass */
+  section.final * {
+    box-sizing: border-box; }
+  /* line 142, ../../sass/_final.sass */
+  section.final ul {
+    margin: 0;
+    padding: 0; }
+  /* line 146, ../../sass/_final.sass */
+  section.final ul li {
+    list-style-type: none; }
+  /* line 149, ../../sass/_final.sass */
+  section.final h2 {
+    margin: 0;
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 15px; }
+  /* line 155, ../../sass/_final.sass */
+  section.final p {
+    margin: 0 0 5px 0; }
+  /* line 158, ../../sass/_final.sass */
+  section.final .col-4 {
+    width: 33.3333%; }
+  /* line 161, ../../sass/_final.sass */
+  section.final .col-8 {
+    width: 66.6667%; }
+  /* line 164, ../../sass/_final.sass */
+  section.final .col-4,
+  section.final .col-8 {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px; }
+  /* line 170, ../../sass/_final.sass */
+  section.final .panel {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    background-color: white; }
+  /* line 175, ../../sass/_final.sass */
+  section.final .panel-header {
+    background-color: #f0f0f0;
+    padding: 15px; }
+  /* line 179, ../../sass/_final.sass */
+  section.final .panel-body {
+    padding: 15px; }
+  /* line 182, ../../sass/_final.sass */
+  section.final .u-pull-left {
+    float: left !important; }
+  /* line 185, ../../sass/_final.sass */
+  section.final .u-pull-right {
+    float: right !important; }
+  /* line 188, ../../sass/_final.sass */
+  section.final .u-media {
+    margin-top: 15px; }
+    /* line 191, ../../sass/_final.sass */
+    section.final .u-media:first-child {
+      margin-top: 0; }
+    /* line 194, ../../sass/_final.sass */
+    section.final .u-media > .u-pull-left {
+      margin-right: 15px; }
+  /* line 197, ../../sass/_final.sass */
+  section.final .u-media-body,
+  section.final .u-media {
+    overflow: hidden;
+    zoom: 1; }
+  /* line 202, ../../sass/_final.sass */
+  section.final small,
+  section.final .u-small {
+    font-size: 85%; }
+  /* line 206, ../../sass/_final.sass */
+  section.final .user-profile {
+    text-align: center; }
+    /* line 208, ../../sass/_final.sass */
+    section.final .user-profile .user-avatar {
+      margin-top: -45px; }
+  /* line 211, ../../sass/_final.sass */
+  section.final .user-informations {
+    text-align: left; }
+  /* line 215, ../../sass/_final.sass */
+  section.final .user-avatar-medium img {
+    width: 32px;
+    height: 32px;
+    border-radius: 3px; }
+  /* line 220, ../../sass/_final.sass */
+  section.final .user-avatar-large img {
+    width: 90px;
+    height: 90px;
+    border-radius: 6px; }

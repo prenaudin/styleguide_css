@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html ng-app="cortana">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="./theme-build/css/vendors.css">
+    <link rel="stylesheet" href="./theme-build/css/cortana.css">
+
+    <!-- Source CSS -->
+    
+      
+        <link rel="stylesheet" href="../assets/css/vendors.css">
+      
+        <link rel="stylesheet" href="../assets/css/styles.css">
+      
+    
+
+    <!--[if lt IE 9]>
+      <script src="theme-build/polyfill/html5shiv.js"></script>
+      <script src="theme-build/polyfill/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+  <body class="cortana-body"  ng-controller="MainController">
+
+    <div class="sb-slidebar sb-left cortana-sidenav sb-style-push">
+
+      
+      
+        
+        
+          
+        
+      
+
+      <nav class="cortana-nav">
+        <ul>
+          
+            <li><a class="active" href="index.html">Home</a></li>
+          
+        </ul>
+        
+          <h3>Examples</h3>
+          <ul>
+          
+            
+              
+              
+                <li><a href="examples.html">Examples</a></li>
+              
+            
+          
+          </ul>
+        
+      </nav>
+    </div>
+
+    <header class="cortana-header sb-slide">
+      
+        <h1>Styleguide home</h1>
+      
+      <div id="open-left" class="cortana-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="cortana-search-wrapper" ng-controller="TypeaheadCtrl">
+        <input id="cortana-search" type="text" class="form-control cortana-search" ng-model="customSelected" placeholder="Search" typeahead="data as data.title for data in searchData | filter:{title:$viewValue}" typeahead-template-url="customTemplate.html" class="form-control" typeahead-on-select="onSelect($item, $model, $label)">
+      </div>
+    </header>
+
+    <div id="sb-site">
+
+      <div class="cortana-container">
+
+        <nav id="cortana-inside-nav" class="cortana-inside-nav" bs-affix>
+          <ul bs-scrollspy-list data-offset="-30">
+            
+          </ul>
+        </nav>
+
+        <div class="cortana-content-wrapper clearfix">
+          <div class="cortana-content">
+
+
+
+<h1>Maîtriser son style CSS</h1>
+
+<p>Ce projet vise à démontrer comment maîtriser et mieux organiser son style CSS.
+Les différentes sections visent à mettre en évidence les différentes manières de
+faire et les patterns exposés durant la conférence.</p>
+
+<h2>Étapes</h2>
+
+<ul>
+<li>Pourquoi et comment on en arrive à vouloir organiser son CSS</li>
+<li>Quelles sont les conventions à connaître</li>
+<li>Itérations sur un exemple :
+
+<ul>
+<li>Application des conventions</li>
+<li>Refactoring</li>
+<li>Utilisation d&#39;un framework CSS</li>
+<li>Utilisation d&#39;un préprocesseur</li>
+<li>Déclarations de variables et mixins</li>
+</ul></li>
+</ul>
+
+<h2>Outils utilisés</h2>
+
+<p>Pour gérer le style guide ici présenté :</p>
+
+<ul>
+<li>Hologram : Gem pour générer des guides de styles <a href="https://github.com/trulia/hologram">https://github.com/trulia/hologram</a></li>
+<li>Cortona : styles et améliorations apportés à Hologram <a href="https://github.com/Yago/Cortana">https://github.com/Yago/Cortana</a></li>
+<li>Pygment : meilleur affichage des exemples de codes <a href="https://github.com/richleland/pygments-css">https://github.com/richleland/pygments-css</a></li>
+</ul>
+
+<p>Les préprocesseurs en CSS :</p>
+
+<ul>
+<li>SASS <a href="http://sass-lang.com/">http://sass-lang.com/</a></li>
+<li>LESS <a href="http://lesscss.org/">http://lesscss.org/</a></li>
+<li>Rework.css <a href="https://github.com/reworkcss/rework">https://github.com/reworkcss/rework</a></li>
+</ul>
+
+<p>Les frameworks CSS :</p>
+
+<ul>
+<li>Foundation <a href="http://foundation.zurb.com/">http://foundation.zurb.com/</a></li>
+<li>Bootstrap <a href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
+<li>Picnic.css <a href="%5Bhttp://picnicss.com/">http://picnicss.com/</a></li>
+</ul>
+
+<p>Les conventions de code front et outils d&#39;analyse de code CSS</p>
+
+<ul>
+<li>Codeguide : <a href="http://codeguide.co/">http://codeguide.co/</a></li>
+<li>CSSStats : <a href="http://cssstats.com/">http://cssstats.com/</a></li>
+</ul>
+
+<h2>Références</h2>
+
+<ul>
+<li>Fat @medium : https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good-b8e2a6c78b06</li>
+<li>Mdo CSS @github : http://markdotto.com/2014/07/23/githubs-css/</li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="cortana-footer">
+      Build with love using Trulia's <a href="https://github.com/trulia/hologram">Hologram</a> and <a href="https://github.com/Yago/Cortana">Cortana</a> !
+    </footer>  
+  </div>
+
+  <script src="theme-build/js/vendors.min.js"></script>
+  <script type="text/javascript">
+    var jQuery_no_conflict = $.noConflict(true);
+  </script>
+  <script src="theme-build/js/main.js"></script>
+  <script type="text/javascript">
+    function TypeaheadCtrl($scope) {
+      $scope.selected = undefined;
+      $scope.searchData = 
+      [
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Start",
+              "breadcrumb": "Examples > Start",
+              "path": "examples.html#01start"
+              },
+            
+              
+              
+              {
+              "title": "Refactoring",
+              "breadcrumb": "Examples > Refactoring",
+              "path": "examples.html#02refactoring"
+              },
+            
+              
+              
+              {
+              "title": "Framework",
+              "breadcrumb": "Examples > Framework",
+              "path": "examples.html#04framework"
+              },
+            
+              
+              
+              {
+              "title": "Final",
+              "breadcrumb": "Examples > Final",
+              "path": "examples.html#05final"
+              },
+            
+          
+        
+      {}];
+      $scope.onSelect = function ($item, $model, $label) {
+        window.location.replace($item.path);
+      };
+    }
+  </script>
+  <script type="text/ng-template" id="customTemplate.html">
+    <a href="{{match.model.path}}">
+      <p class="cortana-search-title">{{match.model.title}}</p>
+      <p class="cortana-search-path">{{match.model.breadcrumb}}</p>
+    </a>
+  </script>
+  
+    
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    
+      <script type="text/javascript" src="../assets/js/main.js"></script>
+    
+  
+  <!-- Source Components -->
+  
+</body>
+</html>
