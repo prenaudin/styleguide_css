@@ -1,3 +1,218 @@
+/*doc
+---
+title: Start
+name: 01start
+category: CSS Styleguide - Examples
+---
+
+
+```html_example
+  <section class="start">
+    <div class="User">
+      <div class="container">
+        <div class="avatar">
+          <img src="../assets/images/avatar.png"/>
+        </div>
+        <div class="body">
+          <h2>MC Hammer</h2>
+
+          <ul class="informations">
+            <li>
+              <b>Email</b>: mchammer@gangsta.com
+            </li>
+            <li>
+              <b>Address</b>: Ghetto Blaster, 23 av.
+            </li>
+            <li>
+              <b>Phone</b>: You foolish chicken
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="Timeline">
+      <div class="container">
+        <div class="header">
+          Messages
+        </div>
+        <div class="body">
+          <ul class="messages">
+            <li class="message">
+              <div class="header">
+                <div class="avatar">
+                  <img src="../assets/images/avatar.png"/>
+                </div>
+              </div>
+              <div class="content">
+                <p><b>MC Hammer</b> <small>- Yesterday, 8:01</small></p>
+                <p>My-my-my-my music keeps me so hard makes me say oh my Lord
+                Thank you for blessing me with a mind to rhyme and two hype feet</p>
+              </div>
+            <li>
+            <li class="message">
+              <div class="header">
+                <div class="avatar">
+                  <img src="../assets/images/avatar.png"/>
+                </div>
+              </div>
+              <div class="content">
+                <p><b>MC Hammer</b> <small>- Yesterday, 8:01</small></p>
+                <p>My-my-my-my music keeps me so hard makes me say oh my Lord
+                Thank you for blessing me with a mind to rhyme and two hype feet</p>
+              </div>
+            <li>
+            <li class="message">
+              <div class="header">
+                <div class="avatar">
+                  <img src="../assets/images/avatar.png"/>
+                </div>
+              </div>
+              <div class="content">
+                <p><b>MC Hammer</b> <small>- Yesterday, 8:01</small></p>
+                <p>My-my-my-my music keeps me so hard makes me say oh my Lord
+                Thank you for blessing me with a mind to rhyme and two hype feet</p>
+              </div>
+            <li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+```
+*/
+/* line 84, ../../sass/_start.scss */
+section.start {
+  font-family: "Open Sans", sans-serif; }
+  /* line 87, ../../sass/_start.scss */
+  section.start .User {
+    width: 33.333%;
+    text-align: center; }
+  /* line 92, ../../sass/_start.scss */
+  section.start .Timeline {
+    width: 66.667%; }
+  /* line 96, ../../sass/_start.scss */
+  section.start .User, section.start .Timeline {
+    float: left;
+    padding: 0 20px;
+    box-sizing: border-box; }
+  /* line 102, ../../sass/_start.scss */
+  section.start .User .container {
+    border: 1px solid #DDDDDD;
+    padding: 15px;
+    border-radius: 3px; }
+  /* line 108, ../../sass/_start.scss */
+  section.start .User .avatar img {
+    width: 90px;
+    height: 90px;
+    margin-top: -45px;
+    border-radius: 3px; }
+  /* line 115, ../../sass/_start.scss */
+  section.start .User ul {
+    list-style: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 13px; }
+  /* line 123, ../../sass/_start.scss */
+  section.start .Timeline > .container > .header {
+    background-color: #f0f0f0;
+    margin: -15px -15px 15px -15px;
+    padding: 15px;
+    border-bottom: 1px solid #DDDDDD; }
+  /* line 130, ../../sass/_start.scss */
+  section.start .Timeline .container {
+    border: 1px solid #DDDDDD;
+    padding: 15px;
+    border-radius: 3px; }
+  /* line 136, ../../sass/_start.scss */
+  section.start .Timeline .avatar {
+    float: left;
+    margin-right: 10px; }
+  /* line 141, ../../sass/_start.scss */
+  section.start .Timeline .message .header .avatar img {
+    width: 32px;
+    height: 32px;
+    border-radius: 3px; }
+  /* line 147, ../../sass/_start.scss */
+  section.start .Timeline .message .content {
+    zoom: 1;
+    overflow: hidden; }
+  /* line 152, ../../sass/_start.scss */
+  section.start .Timeline .message .content p {
+    margin: 0 0 10px 0; }
+  /* line 156, ../../sass/_start.scss */
+  section.start .Timeline ul {
+    list-style: none;
+    text-align: left;
+    margin: 0;
+    padding: 0; }
+
+/* line 83, ../../sass/_refactoring.sass */
+section.refactoring {
+  font-family: "Open Sans", sans-serif; }
+  /* line 95, ../../sass/_refactoring.sass */
+  section.refactoring ul {
+    list-style: none;
+    text-align: left;
+    margin: 0;
+    padding: 0; }
+  /* line 101, ../../sass/_refactoring.sass */
+  section.refactoring .user {
+    width: 33.333%;
+    text-align: center; }
+  /* line 105, ../../sass/_refactoring.sass */
+  section.refactoring .timeline {
+    width: 66.667%; }
+  /* line 108, ../../sass/_refactoring.sass */
+  section.refactoring .user, section.refactoring .timeline {
+    float: left;
+    padding: 0 20px;
+    box-sizing: border-box; }
+  /* line 120, ../../sass/_refactoring.sass */
+  section.refactoring .user .container {
+    border: 1px solid #dddddd;
+    padding: 15px;
+    border-radius: 3px; }
+  /* line 125, ../../sass/_refactoring.sass */
+  section.refactoring .user .avatar img {
+    width: 90px;
+    height: 90px;
+    margin-top: -45px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
+  /* line 132, ../../sass/_refactoring.sass */
+  section.refactoring .user .informations {
+    font-size: 13px; }
+  /* line 136, ../../sass/_refactoring.sass */
+  section.refactoring .timeline > .container > .header {
+    background-color: #f0f0f0;
+    margin: -15px -15px 15px -15px;
+    padding: 15px;
+    border-bottom: 1px solid #dddddd; }
+  /* line 142, ../../sass/_refactoring.sass */
+  section.refactoring .timeline .container {
+    border: 1px solid #dddddd;
+    padding: 15px;
+    border-radius: 3px; }
+  /* line 147, ../../sass/_refactoring.sass */
+  section.refactoring .timeline .avatar {
+    float: left;
+    margin-right: 10px; }
+  /* line 152, ../../sass/_refactoring.sass */
+  section.refactoring .timeline .message .header .avatar img {
+    width: 32px;
+    height: 32px;
+    border-radius: 3px; }
+  /* line 157, ../../sass/_refactoring.sass */
+  section.refactoring .timeline .message .content {
+    zoom: 1;
+    overflow: hidden; }
+    /* line 161, ../../sass/_refactoring.sass */
+    section.refactoring .timeline .message .content p {
+      margin: 0 0 10px 0; }
+
 /* line 86, ../../sass/_framework.sass */
 section.framework {
   font-family: "Open Sans", "sans-serif";
@@ -2869,12 +3084,12 @@ section.final {
   section.final .user-informations {
     text-align: left; }
   /* line 215, ../../sass/_final.sass */
-  section.final .user-avatar-medium img {
+  section.final .user-avatar--medium img {
     width: 32px;
     height: 32px;
     border-radius: 3px; }
   /* line 220, ../../sass/_final.sass */
-  section.final .user-avatar-large img {
+  section.final .user-avatar--large img {
     width: 90px;
     height: 90px;
     border-radius: 6px; }

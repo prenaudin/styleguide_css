@@ -34,9 +34,9 @@
 
   ```html_example
     <section class="final">
-      <div class="col-4">
+      <div class="user col-4">
         <div class="user-profile panel">
-          <div class="user-avatar user-avatar-large">
+          <div class="user-avatar user-avatar--large">
             <img src="../assets/images/avatar.png"/>
           </div>
           <div class="panel-body">
@@ -65,7 +65,7 @@
             <ul class="messages">
               <li class="message u-media">
                 <div class="message-header u-pull-left">
-                  <div class="user-avatar user-avatar-medium">
+                  <div class="user-avatar user-avatar--medium">
                     <img src="../assets/images/avatar.png"/>
                   </div>
                 </div>
@@ -77,7 +77,7 @@
               <li>
               <li class="message u-media">
                 <div class="message-header u-pull-left">
-                  <div class="user-avatar user-avatar-medium">
+                  <div class="user-avatar user-avatar--medium">
                     <img src="../assets/images/avatar.png"/>
                   </div>
                 </div>
@@ -89,7 +89,7 @@
               <li>
               <li class="message u-media">
                 <div class="message-header u-pull-left">
-                  <div class="user-avatar user-avatar-medium">
+                  <div class="user-avatar user-avatar--medium">
                     <img src="../assets/images/avatar.png"/>
                   </div>
                 </div>
@@ -211,12 +211,12 @@ section.final
   .user-informations
     text-align: left
 
-  .user-avatar-medium
+  .user-avatar--medium
     img
       +square($size-avatar-medium)
       border-radius: $border-radius-base
 
-  .user-avatar-large
+  .user-avatar--large
     img
       +square($size-avatar-large)
       border-radius: $border-radius-large
