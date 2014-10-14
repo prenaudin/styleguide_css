@@ -115,7 +115,94 @@
 
 
 <h1 id="01start">Start</h1>
-</div><div class="codeExample"><div class="exampleOutput">  <section class="start">
+
+<p>Premier des quatres exemples qui est le support de notre refactoring.
+Il permet de mettre en évidence les problèmes que l&#39;on rencontre en CSS :</p>
+
+<ul>
+<li>Pas de convention de nommage</li>
+<li>Des sélecteurs exotiques</li>
+<li>Des problèmes avec les block de style qui définissent des composants graphiques et fonctionnels</li>
+</ul>
+
+<p>Source :
+<a href="https://github.com/prenaudin/styleguide_css/blob/master/sass/_start.scss">https://github.com/prenaudin/styleguide<em>css/blob/master/sass/</em>start.scss</a></p>
+</div><div class="codeBlock scssExample"><div class="highlight"><pre><span class="nc">.User</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">33</span><span class="mi">.333%</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.Timeline</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">66</span><span class="mi">.667%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.User</span><span class="o">,</span> <span class="nc">.Timeline</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.User</span> <span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="mh">#DDDDDD</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.User</span> <span class="nc">.avatar</span> <span class="nt">img</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">90px</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">90px</span><span class="p">;</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">-45px</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.User</span> <span class="nt">ul</span> <span class="p">{</span>
+  <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">13px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.Timeline</span> <span class="o">&gt;</span> <span class="nc">.container</span> <span class="o">&gt;</span> <span class="nc">.header</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="m">240</span><span class="o">,</span><span class="m">240</span><span class="o">,</span><span class="m">240</span><span class="p">);</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">-15px</span> <span class="m">-15px</span> <span class="m">15px</span> <span class="m">-15px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="mh">#DDDDDD</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.Timeline</span> <span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="mh">#DDDDDD</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.Timeline</span> <span class="nc">.avatar</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">margin-right</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.Timeline</span> <span class="nc">.message</span> <span class="nc">.header</span> <span class="nc">.avatar</span> <span class="nt">img</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">32px</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">32px</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.Timeline</span> <span class="nc">.message</span> <span class="nc">.content</span> <span class="p">{</span>
+  <span class="na">zoom</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+  <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.Timeline</span> <span class="nc">.message</span> <span class="nc">.content</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">10px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.Timeline</span> <span class="nt">ul</span> <span class="p">{</span>
+  <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div></div><div class="cortana-content"></div><div class="codeExample"><div class="exampleOutput">  <section class="start">
     <div class="User">
       <div class="container">
         <div class="avatar">
@@ -259,7 +346,81 @@
   <span class="nt">&lt;/section&gt;</span>
 </pre></div></div></div><div class="cortana-content">
 <h1 id="02refactoring">Refactoring</h1>
-</div><div class="codeExample"><div class="exampleOutput">    <section class="refactoring">
+
+<p>On réécrit notre exemple avec Sass :</p>
+
+<ul>
+<li>On utilise des variables</li>
+<li>On utilise l&#39;indentation pour ne pas répéter les sélecteurs</li>
+<li>Des mixins pour générer les vendors prefixes</li>
+</ul>
+
+<p>Source :
+  <a href="https://github.com/prenaudin/styleguide_css/blob/master/sass/_refactoring.sass">https://github.com/prenaudin/styleguide<em>css/blob/master/sass/</em>refactoring.sass</a></p>
+</div><div class="codeBlock sassExample"><div class="highlight"><pre>  <span class="nc">.user</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">33</span><span class="mi">.333%</span>
+    <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span>
+
+  <span class="nc">.timeline</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">66</span><span class="mi">.667%</span>
+
+  <span class="nc">.user</span><span class="o">,</span> <span class="nc">.timeline</span>
+    <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span> <span class="m">20px</span>
+    <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">border-box</span>
+
+  <span class="nv">$gray</span><span class="p">:</span> <span class="mh">#DDDDDD</span>
+  <span class="nv">$padding-default</span><span class="p">:</span> <span class="m">15px</span>
+  <span class="nv">$avatar-size</span><span class="p">:</span> <span class="m">90px</span>
+  <span class="nv">$avatar-size-small</span><span class="p">:</span> <span class="m">32px</span>
+  <span class="nv">$border-radius-base</span><span class="p">:</span> <span class="m">3px</span>
+  <span class="nv">$font-size-small</span><span class="p">:</span> <span class="m">13px</span>
+
+  <span class="nc">.user</span>
+    <span class="nc">.container</span>
+      <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="nv">$gray</span>
+      <span class="nl">padding</span><span class="p">:</span> <span class="nv">$padding-default</span>
+      <span class="nl">border-radius</span><span class="p">:</span> <span class="nv">$border-radius-base</span>
+
+    <span class="nc">.avatar</span> <span class="nt">img</span>
+      <span class="nl">width</span><span class="p">:</span> <span class="nv">$avatar-size</span>
+      <span class="nl">height</span><span class="p">:</span> <span class="nv">$avatar-size</span>
+      <span class="nl">margin-top</span><span class="p">:</span> <span class="nf">-</span> <span class="p">(</span><span class="nv">$avatar-size</span><span class="o">/</span><span class="m">2</span><span class="p">)</span>
+      <span class="nl">border-radius</span><span class="p">:</span> <span class="nv">$border-radius-base</span>
+      <span class="nd">+box-shadow</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">1px</span><span class="o">,</span> <span class="m">1px</span><span class="o">,</span> <span class="nf">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,.</span><span class="m">2</span><span class="p">))</span>
+
+    <span class="nc">.informations</span>
+      <span class="nl">font-size</span><span class="p">:</span> <span class="nv">$font-size-small</span>
+
+  <span class="nc">.timeline</span>
+    <span class="o">&gt;</span> <span class="nc">.container</span> <span class="o">&gt;</span> <span class="nc">.header</span>
+      <span class="nl">background-color</span><span class="p">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="m">240</span><span class="o">,</span><span class="m">240</span><span class="o">,</span><span class="m">240</span><span class="p">)</span>
+      <span class="nl">margin</span><span class="p">:</span> <span class="o">-</span><span class="nv">$padding-default</span> <span class="o">-</span><span class="nv">$padding-default</span> <span class="nv">$padding-default</span> <span class="o">-</span><span class="nv">$padding-default</span>
+      <span class="nl">padding</span><span class="p">:</span> <span class="nv">$padding-default</span>
+      <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="nv">$gray</span>
+
+    <span class="nc">.container</span>
+      <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="nv">$gray</span>
+      <span class="nl">padding</span><span class="p">:</span> <span class="nv">$padding-default</span>
+      <span class="nl">border-radius</span><span class="p">:</span> <span class="m">3px</span>
+
+    <span class="nc">.avatar</span>
+      <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span>
+      <span class="nl">margin-right</span><span class="p">:</span> <span class="m">10px</span>
+
+    <span class="nc">.message</span>
+      <span class="nc">.header</span> <span class="nc">.avatar</span> <span class="nt">img</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="nv">$avatar-size-small</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="nv">$avatar-size-small</span>
+        <span class="nl">border-radius</span><span class="p">:</span> <span class="nv">$border-radius-base</span>
+
+      <span class="nc">.content</span>
+        <span class="na">zoom</span><span class="p">:</span> <span class="m">1</span>
+        <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span>
+
+        <span class="nt">p</span>
+          <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">10px</span> <span class="m">0</span>
+</pre></div></div><div class="cortana-content"></div><div class="codeExample"><div class="exampleOutput">    <section class="refactoring">
       <div class="user">
         <div class="container">
           <div class="avatar">
@@ -405,8 +566,72 @@
 <h1 id="04framework">Framework</h1>
 
 <p>Ici, on réécrit l&#39;exemple avec Boostrap pour voir comment
-  celui-ci normalise ce dont on a besoin</p>
-</div><div class="codeExample"><div class="exampleOutput">    <section class="row framework">
+  celui-ci normalise ce dont on a besoin.
+  On sépare nos composants graphiques et fonctionnels.
+  On réutilise Sass pour n&#39;importer que les portions importantes de bootstrap.</p>
+
+<p>Source :
+  <a href="https://github.com/prenaudin/styleguide_css/blob/master/sass/_framework.sass">https://github.com/prenaudin/styleguide<em>css/blob/master/sass/</em>framework.sass</a></p>
+</div><div class="codeBlock sassExample"><div class="highlight"><pre>  <span class="nv">$font-family-sans-serif</span><span class="p">:</span> <span class="s1">'Open Sans'</span><span class="o">,</span> <span class="s1">'sans-serif'</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="nv">$font-family-sans-serif</span>
+
+  <span class="nv">$font-size-h2</span><span class="p">:</span> <span class="m">22px</span>
+
+  <span class="nv">$gray</span><span class="p">:</span> <span class="mh">#DDDDDD</span>
+  <span class="nv">$padding-default</span><span class="p">:</span> <span class="m">15px</span>
+  <span class="nv">$avatar-size</span><span class="p">:</span> <span class="m">90px</span>
+  <span class="nv">$avatar-size-small</span><span class="p">:</span> <span class="m">32px</span>
+  <span class="nv">$border-radius-base</span><span class="p">:</span> <span class="m">3px</span>
+  <span class="nv">$font-size-small</span><span class="p">:</span> <span class="m">13px</span>
+
+  <span class="c1">// Bootrap variables import
+</span>  <span class="k">@import</span> <span class="s">vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/variables</span>
+  <span class="o">@</span><span class="nt">import</span> <span class="nt">vendor</span><span class="o">/</span><span class="nt">bootstrap-sass-twbs</span><span class="o">/</span><span class="nt">assets</span><span class="o">/</span><span class="nt">stylesheets</span><span class="o">/</span><span class="nt">bootstrap</span><span class="o">/</span><span class="nt">mixins</span>
+
+  <span class="c1">// Reset and dependencies
+</span>  <span class="k">@import</span> <span class="s">vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/normalize</span>
+
+  <span class="c1">// Core CSS
+</span>  <span class="k">@import</span> <span class="s">vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/scaffolding</span>
+  <span class="o">@</span><span class="nt">import</span> <span class="nt">vendor</span><span class="o">/</span><span class="nt">bootstrap-sass-twbs</span><span class="o">/</span><span class="nt">assets</span><span class="o">/</span><span class="nt">stylesheets</span><span class="o">/</span><span class="nt">bootstrap</span><span class="o">/</span><span class="nt">type</span>
+  <span class="k">@import</span> <span class="s">vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/code</span>
+  <span class="o">@</span><span class="nt">import</span> <span class="nt">vendor</span><span class="o">/</span><span class="nt">bootstrap-sass-twbs</span><span class="o">/</span><span class="nt">assets</span><span class="o">/</span><span class="nt">stylesheets</span><span class="o">/</span><span class="nt">bootstrap</span><span class="o">/</span><span class="nt">grid</span>
+  <span class="k">@import</span> <span class="s">vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/tables</span>
+  <span class="o">@</span><span class="nt">import</span> <span class="nt">vendor</span><span class="o">/</span><span class="nt">bootstrap-sass-twbs</span><span class="o">/</span><span class="nt">assets</span><span class="o">/</span><span class="nt">stylesheets</span><span class="o">/</span><span class="nt">bootstrap</span><span class="o">/</span><span class="nt">forms</span>
+  <span class="k">@import</span> <span class="s">vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/buttons</span>
+
+  <span class="k">@import</span> <span class="s">vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/panels</span>
+  <span class="o">@</span><span class="nt">import</span> <span class="nt">vendor</span><span class="o">/</span><span class="nt">bootstrap-sass-twbs</span><span class="o">/</span><span class="nt">assets</span><span class="o">/</span><span class="nt">stylesheets</span><span class="o">/</span><span class="nt">bootstrap</span><span class="o">/</span><span class="nt">utilities</span>
+  <span class="k">@import</span> <span class="s">vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/responsive-utilities</span>
+  <span class="o">@</span><span class="nt">import</span> <span class="nt">vendor</span><span class="o">/</span><span class="nt">bootstrap-sass-twbs</span><span class="o">/</span><span class="nt">assets</span><span class="o">/</span><span class="nt">stylesheets</span><span class="o">/</span><span class="nt">bootstrap</span><span class="o">/</span><span class="nt">media</span>
+
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="nv">$avatar-size</span><span class="o">/</span><span class="m">2</span>
+
+  <span class="nt">ul</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span>
+
+  <span class="nt">ul</span> <span class="nt">li</span>
+    <span class="nl">list-style-type</span><span class="p">:</span> <span class="nb">none</span>
+
+  <span class="nt">h2</span>
+    <span class="nl">margin-top</span><span class="p">:</span> <span class="m">5px</span>
+
+  <span class="nc">.user-avatar-medium</span>
+    <span class="nt">img</span>
+      <span class="nl">width</span><span class="p">:</span> <span class="nv">$avatar-size-small</span>
+      <span class="nl">height</span><span class="p">:</span> <span class="nv">$avatar-size-small</span>
+      <span class="nl">border-radius</span><span class="p">:</span> <span class="nv">$border-radius-base</span>
+
+  <span class="nc">.user-avatar-large</span>
+    <span class="nt">img</span>
+      <span class="nl">width</span><span class="p">:</span> <span class="nv">$avatar-size</span>
+      <span class="nl">height</span><span class="p">:</span> <span class="nv">$avatar-size</span>
+      <span class="nl">border-radius</span><span class="p">:</span> <span class="m">2</span><span class="o">*</span><span class="nv">$border-radius-base</span>
+
+  <span class="nc">.user-profile</span> <span class="nc">.user-avatar</span>
+    <span class="nl">margin-top</span><span class="p">:</span> <span class="o">-</span><span class="nv">$avatar-size</span><span class="o">/</span><span class="m">2</span>
+</pre></div></div><div class="cortana-content"></div><div class="codeExample"><div class="exampleOutput">    <section class="row framework">
       <div class="col-xs-4">
         <div class="user-profile panel panel-default text-center">
           <div class="user-avatar user-avatar-large">
@@ -552,28 +777,131 @@
 <h1 id="05final">Final</h1>
 
 <p>On fait un peu de ménage, on remets tout ça dans l&#39;ordre
-  pour faire la version finale</p>
-</div><div class="codeBlock sassExample"><div class="highlight"><pre>    <span class="nt">small</span><span class="o">,</span>
-    <span class="nc">.u-small</span>
-      <span class="nl">font-size</span><span class="p">:</span> <span class="m">85%</span>
+  pour faire la version finale.
+  On n&#39;utilise plus de framework mais on implémente les conventions :</p>
 
-    <span class="nc">.user-profile</span>
-      <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span>
-      <span class="nc">.user-avatar</span>
-        <span class="nl">margin-top</span><span class="p">:</span> <span class="nf">-</span><span class="p">(</span> <span class="nv">$size-avatar-large</span> <span class="o">/</span> <span class="m">2</span> <span class="p">)</span>
+<ul>
+<li>u-utilities : pour faire un utilitaire</li>
+<li>is-modifier : pour modifier un block dans un certain état</li>
+<li>.block-element--modifier : pour spécifier une variation</li>
+<li>.js-property : pour une classe réservée au javascript</li>
+</ul>
 
-    <span class="nc">.user-informations</span>
-      <span class="nl">text-align</span><span class="p">:</span> <span class="nb">left</span>
+<p>Source :
+  <a href="https://github.com/prenaudin/styleguide_css/blob/master/sass/_final.sass">https://github.com/prenaudin/styleguide<em>css/blob/master/sass/</em>final.sass</a></p>
+</div><div class="codeBlock sassExample"><div class="highlight"><pre>  <span class="nv">$font-size-small</span> <span class="p">:</span> <span class="m">12px</span>
+  <span class="nv">$font-size-base</span>  <span class="p">:</span> <span class="m">16px</span>
+  <span class="nv">$font-size-large</span> <span class="p">:</span> <span class="m">22px</span>
 
-    <span class="nc">.user-avatar-medium</span>
-      <span class="nt">img</span>
-        <span class="nd">+square</span><span class="p">(</span><span class="nv">$size-avatar-medium</span><span class="p">)</span>
-        <span class="nl">border-radius</span><span class="p">:</span> <span class="nv">$border-radius-base</span>
+  <span class="nv">$color-dark</span>    <span class="p">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="m">51</span><span class="o">,</span><span class="m">51</span><span class="o">,</span><span class="m">51</span><span class="p">)</span>
+  <span class="nv">$color-gray</span>    <span class="p">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="m">135</span><span class="o">,</span><span class="m">136</span><span class="o">,</span><span class="m">136</span><span class="p">)</span>
+  <span class="nv">$color-lighter</span> <span class="p">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="m">240</span><span class="o">,</span><span class="m">240</span><span class="o">,</span><span class="m">240</span><span class="p">)</span>
+  <span class="nv">$color-white</span>   <span class="p">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="m">255</span><span class="o">,</span><span class="m">255</span><span class="o">,</span><span class="m">255</span><span class="p">)</span>
 
-    <span class="nc">.user-avatar-large</span>
-      <span class="nt">img</span>
-        <span class="nd">+square</span><span class="p">(</span><span class="nv">$size-avatar-large</span><span class="p">)</span>
-        <span class="nl">border-radius</span><span class="p">:</span> <span class="nv">$border-radius-large</span>
+  <span class="nv">$margin-treshold</span>     <span class="p">:</span> <span class="m">5px</span>
+  <span class="nv">$margin-bottom-block</span> <span class="p">:</span> <span class="m">3</span> <span class="o">*</span> <span class="nv">$margin-treshold</span>
+  <span class="nv">$margin-spacing-jumbo</span><span class="p">:</span> <span class="m">3</span> <span class="o">*</span> <span class="nv">$margin-bottom-block</span>
+
+  <span class="nv">$border-radius-base</span>  <span class="p">:</span> <span class="m">3px</span>
+  <span class="nv">$border-radius-large</span> <span class="p">:</span> <span class="m">6px</span>
+
+  <span class="nv">$size-avatar-medium</span> <span class="p">:</span> <span class="m">32px</span>
+  <span class="nv">$size-avatar-large</span>  <span class="p">:</span> <span class="m">90px</span>
+
+  <span class="nf">=square</span><span class="p">(</span><span class="nv">$size</span><span class="p">)</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="nv">$size</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="nv">$size</span>
+
+
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="nv">$margin-spacing-jumbo</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">"Open Sans"</span><span class="o">,</span> <span class="nb">sans-serif</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="m">1</span><span class="mi">.6em</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="nv">$font-size-base</span>
+
+  <span class="o">*</span>
+    <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">border-box</span>
+
+  <span class="nt">ul</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span>
+
+  <span class="nt">ul</span> <span class="nt">li</span>
+    <span class="nl">list-style-type</span><span class="p">:</span> <span class="nb">none</span>
+
+  <span class="nt">h2</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="nv">$font-size-large</span>
+    <span class="nl">margin-top</span><span class="p">:</span> <span class="nv">$margin-treshold</span>
+    <span class="nl">margin-bottom</span><span class="p">:</span> <span class="nv">$margin-bottom-block</span>
+
+  <span class="nt">p</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="nv">$margin-treshold</span> <span class="m">0</span>
+
+  <span class="nc">.col-4</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">33</span><span class="mi">.3333%</span>
+
+  <span class="nc">.col-8</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">66</span><span class="mi">.6667%</span>
+
+  <span class="nc">.col-4</span><span class="o">,</span>
+  <span class="nc">.col-8</span>
+    <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span>
+    <span class="nl">padding-left</span><span class="p">:</span> <span class="nv">$margin-bottom-block</span>
+    <span class="nl">padding-right</span><span class="p">:</span> <span class="nv">$margin-bottom-block</span>
+
+  <span class="nc">.panel</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="nf">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,.</span><span class="m">15</span><span class="p">)</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="nv">$border-radius-base</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$color-white</span>
+
+  <span class="nc">.panel-header</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$color-lighter</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="nv">$margin-bottom-block</span>
+
+  <span class="nc">.panel-body</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="nv">$margin-bottom-block</span>
+
+  <span class="nc">.u-pull-left</span>
+    <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span> <span class="o">!</span><span class="n">important</span>
+
+  <span class="nc">.u-pull-right</span>
+    <span class="nl">float</span><span class="p">:</span> <span class="nb">right</span> <span class="o">!</span><span class="n">important</span>
+
+  <span class="nc">.u-media</span>
+    <span class="nl">margin-top</span><span class="p">:</span> <span class="nv">$margin-bottom-block</span>
+
+    <span class="k">&amp;</span><span class="nd">:first-child</span>
+      <span class="nl">margin-top</span><span class="p">:</span> <span class="m">0</span>
+
+    <span class="o">&gt;</span> <span class="nc">.u-pull-left</span>
+      <span class="nl">margin-right</span><span class="p">:</span> <span class="nv">$margin-bottom-block</span>
+
+  <span class="nc">.u-media-body</span><span class="o">,</span>
+  <span class="nc">.u-media</span>
+    <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span>
+    <span class="na">zoom</span><span class="p">:</span> <span class="m">1</span>
+
+  <span class="nt">small</span><span class="o">,</span>
+  <span class="nc">.u-small</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">85%</span>
+
+  <span class="nc">.user-profile</span>
+    <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span>
+    <span class="nc">.user-avatar</span>
+      <span class="nl">margin-top</span><span class="p">:</span> <span class="nf">-</span><span class="p">(</span> <span class="nv">$size-avatar-large</span> <span class="o">/</span> <span class="m">2</span> <span class="p">)</span>
+
+  <span class="nc">.user-informations</span>
+    <span class="nl">text-align</span><span class="p">:</span> <span class="nb">left</span>
+
+  <span class="nc">.user-avatar--medium</span>
+    <span class="nt">img</span>
+      <span class="nd">+square</span><span class="p">(</span><span class="nv">$size-avatar-medium</span><span class="p">)</span>
+      <span class="nl">border-radius</span><span class="p">:</span> <span class="nv">$border-radius-base</span>
+
+  <span class="nc">.user-avatar--large</span>
+    <span class="nt">img</span>
+      <span class="nd">+square</span><span class="p">(</span><span class="nv">$size-avatar-large</span><span class="p">)</span>
+      <span class="nl">border-radius</span><span class="p">:</span> <span class="nv">$border-radius-large</span>
 </pre></div></div><div class="cortana-content"></div><div class="codeExample"><div class="exampleOutput">    <section class="final">
       <div class="user col-4">
         <div class="user-profile panel">

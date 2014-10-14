@@ -4,6 +4,8 @@ Ce projet vise à démontrer comment maîtriser et mieux organiser son style CSS
 Les différentes sections visent à mettre en évidence les différentes manières de
 faire et les patterns exposés durant la conférence.
 
+Pour le code source, c'est par ici : [https://github.com/prenaudin/styleguide_css](https://github.com/prenaudin/styleguide_css)
+
 ## Étapes
 
 * Pourquoi et comment on en arrive à vouloir organiser son CSS

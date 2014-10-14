@@ -6,30 +6,132 @@
   ---
 
   On fait un peu de ménage, on remets tout ça dans l'ordre
-  pour faire la version finale
+  pour faire la version finale.
+  On n'utilise plus de framework mais on implémente les conventions :
+
+  * u-utilities : pour faire un utilitaire
+  * is-modifier : pour modifier un block dans un certain état
+  * .block-element--modifier : pour spécifier une variation
+  * .js-property : pour une classe réservée au javascript
+
+  Source :
+  [https://github.com/prenaudin/styleguide_css/blob/master/sass/_final.sass](https://github.com/prenaudin/styleguide_css/blob/master/sass/_final.sass)
+
 
   ```sass_example
-    small,
-    .u-small
-      font-size: 85%
+  $font-size-small : 12px
+  $font-size-base  : 16px
+  $font-size-large : 22px
 
-    .user-profile
-      text-align: center
-      .user-avatar
-        margin-top: -( $size-avatar-large / 2 )
+  $color-dark    : rgb(51,51,51)
+  $color-gray    : rgb(135,136,136)
+  $color-lighter : rgb(240,240,240)
+  $color-white   : rgb(255,255,255)
 
-    .user-informations
-      text-align: left
+  $margin-treshold     : 5px
+  $margin-bottom-block : 3 * $margin-treshold
+  $margin-spacing-jumbo: 3 * $margin-bottom-block
 
-    .user-avatar-medium
-      img
-        +square($size-avatar-medium)
-        border-radius: $border-radius-base
+  $border-radius-base  : 3px
+  $border-radius-large : 6px
 
-    .user-avatar-large
-      img
-        +square($size-avatar-large)
-        border-radius: $border-radius-large
+  $size-avatar-medium : 32px
+  $size-avatar-large  : 90px
+
+  =square($size)
+    width: $size
+    height: $size
+
+
+  margin-top: $margin-spacing-jumbo
+  font-family: "Open Sans", sans-serif
+  line-height: 1.6em
+  font-size: $font-size-base
+
+  *
+    box-sizing: border-box
+
+  ul
+    margin: 0
+    padding: 0
+
+  ul li
+    list-style-type: none
+
+  h2
+    margin: 0
+    font-size: $font-size-large
+    margin-top: $margin-treshold
+    margin-bottom: $margin-bottom-block
+
+  p
+    margin: 0 0 $margin-treshold 0
+
+  .col-4
+    width: 33.3333%
+
+  .col-8
+    width: 66.6667%
+
+  .col-4,
+  .col-8
+    float: left
+    padding-left: $margin-bottom-block
+    padding-right: $margin-bottom-block
+
+  .panel
+    border: 1px solid rgba(0,0,0,.15)
+    border-radius: $border-radius-base
+    background-color: $color-white
+
+  .panel-header
+    background-color: $color-lighter
+    padding: $margin-bottom-block
+
+  .panel-body
+    padding: $margin-bottom-block
+
+  .u-pull-left
+    float: left !important
+
+  .u-pull-right
+    float: right !important
+
+  .u-media
+    margin-top: $margin-bottom-block
+
+    &:first-child
+      margin-top: 0
+
+    > .u-pull-left
+      margin-right: $margin-bottom-block
+
+  .u-media-body,
+  .u-media
+    overflow: hidden
+    zoom: 1
+
+  small,
+  .u-small
+    font-size: 85%
+
+  .user-profile
+    text-align: center
+    .user-avatar
+      margin-top: -( $size-avatar-large / 2 )
+
+  .user-informations
+    text-align: left
+
+  .user-avatar--medium
+    img
+      +square($size-avatar-medium)
+      border-radius: $border-radius-base
+
+  .user-avatar--large
+    img
+      +square($size-avatar-large)
+      border-radius: $border-radius-large
   ```
 
   ```html_example

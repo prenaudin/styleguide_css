@@ -6,8 +6,75 @@
   ---
 
   Ici, on réécrit l'exemple avec Boostrap pour voir comment
-  celui-ci normalise ce dont on a besoin
+  celui-ci normalise ce dont on a besoin.
+  On sépare nos composants graphiques et fonctionnels.
+  On réutilise Sass pour n'importer que les portions importantes de bootstrap.
 
+  Source :
+  [https://github.com/prenaudin/styleguide_css/blob/master/sass/_framework.sass](https://github.com/prenaudin/styleguide_css/blob/master/sass/_framework.sass)
+
+
+  ```sass_example
+  $font-family-sans-serif: 'Open Sans', 'sans-serif'
+  font-family: $font-family-sans-serif
+
+  $font-size-h2: 22px
+
+  $gray: #DDDDDD
+  $padding-default: 15px
+  $avatar-size: 90px
+  $avatar-size-small: 32px
+  $border-radius-base: 3px
+  $font-size-small: 13px
+
+  // Bootrap variables import
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/variables
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins
+
+  // Reset and dependencies
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/normalize
+
+  // Core CSS
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/scaffolding
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/type
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/code
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/grid
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/tables
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/forms
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/buttons
+
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/panels
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/utilities
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/responsive-utilities
+  @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/media
+
+  margin-top: $avatar-size/2
+
+  ul
+    margin: 0
+    padding: 0
+
+  ul li
+    list-style-type: none
+
+  h2
+    margin-top: 5px
+
+  .user-avatar-medium
+    img
+      width: $avatar-size-small
+      height: $avatar-size-small
+      border-radius: $border-radius-base
+
+  .user-avatar-large
+    img
+      width: $avatar-size
+      height: $avatar-size
+      border-radius: 2*$border-radius-base
+
+  .user-profile .user-avatar
+    margin-top: -$avatar-size/2
+  ```
 
   ```html_example
     <section class="row framework">
@@ -89,6 +156,13 @@ section.framework
 
   $font-size-h2: 22px
 
+  $gray: #DDDDDD
+  $padding-default: 15px
+  $avatar-size: 90px
+  $avatar-size-small: 32px
+  $border-radius-base: 3px
+  $font-size-small: 13px
+
   // Bootrap variables import
   @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/variables
   @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins
@@ -110,7 +184,7 @@ section.framework
   @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/responsive-utilities
   @import vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap/media
 
-  margin-top: 45px
+  margin-top: $avatar-size/2
 
   ul
     margin: 0
@@ -124,15 +198,15 @@ section.framework
 
   .user-avatar-medium
     img
-      width: 32px
-      height: 32px
-      border-radius: 3px
+      width: $avatar-size-small
+      height: $avatar-size-small
+      border-radius: $border-radius-base
 
   .user-avatar-large
     img
-      width: 90px
-      height: 90px
-      border-radius: 6px
+      width: $avatar-size
+      height: $avatar-size
+      border-radius: 2*$border-radius-base
 
   .user-profile .user-avatar
-    margin-top: -45px
+    margin-top: -$avatar-size/2

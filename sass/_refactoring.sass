@@ -5,6 +5,82 @@
   category: CSS Styleguide - Examples
   ---
 
+  On réécrit notre exemple avec Sass :
+
+  * On utilise des variables
+  * On utilise l'indentation pour ne pas répéter les sélecteurs
+  * Des mixins pour générer les vendors prefixes
+
+  Source :
+  [https://github.com/prenaudin/styleguide_css/blob/master/sass/_refactoring.sass](https://github.com/prenaudin/styleguide_css/blob/master/sass/_refactoring.sass)
+
+
+
+  ```sass_example
+  .user
+    width: 33.333%
+    text-align: center
+
+  .timeline
+    width: 66.667%
+
+  .user, .timeline
+    float: left
+    padding: 0 20px
+    box-sizing: border-box
+
+  $gray: #DDDDDD
+  $padding-default: 15px
+  $avatar-size: 90px
+  $avatar-size-small: 32px
+  $border-radius-base: 3px
+  $font-size-small: 13px
+
+  .user
+    .container
+      border: 1px solid $gray
+      padding: $padding-default
+      border-radius: $border-radius-base
+
+    .avatar img
+      width: $avatar-size
+      height: $avatar-size
+      margin-top: - ($avatar-size/2)
+      border-radius: $border-radius-base
+      +box-shadow(0, 1px, 1px, rgba(0,0,0,.2))
+
+    .informations
+      font-size: $font-size-small
+
+  .timeline
+    > .container > .header
+      background-color: rgb(240,240,240)
+      margin: -$padding-default -$padding-default $padding-default -$padding-default
+      padding: $padding-default
+      border-bottom: 1px solid $gray
+
+    .container
+      border: 1px solid $gray
+      padding: $padding-default
+      border-radius: 3px
+
+    .avatar
+      float: left
+      margin-right: 10px
+
+    .message
+      .header .avatar img
+        width: $avatar-size-small
+        height: $avatar-size-small
+        border-radius: $border-radius-base
+
+      .content
+        zoom: 1
+        overflow: hidden
+
+        p
+          margin: 0 0 10px 0
+  ```
 
   ```html_example
     <section class="refactoring">
@@ -113,6 +189,7 @@ section.refactoring
   $gray: #DDDDDD
   $padding-default: 15px
   $avatar-size: 90px
+  $avatar-size-small: 32px
   $border-radius-base: 3px
   $font-size-small: 13px
 
@@ -135,13 +212,13 @@ section.refactoring
   .timeline
     > .container > .header
       background-color: rgb(240,240,240)
-      margin: -15px -15px 15px -15px
-      padding: 15px
-      border-bottom: 1px solid #DDDDDD
+      margin:  (-$padding-default) (-$padding-default) $padding-default (-$padding-default)
+      padding: $padding-default
+      border-bottom: 1px solid $gray
 
     .container
-      border: 1px solid #DDDDDD
-      padding: 15px
+      border: 1px solid $gray
+      padding: $padding-default
       border-radius: 3px
 
     .avatar
@@ -150,9 +227,9 @@ section.refactoring
 
     .message
       .header .avatar img
-        width: 32px
-        height: 32px
-        border-radius: 3px
+        width: $avatar-size-small
+        height: $avatar-size-small
+        border-radius: $border-radius-base
 
       .content
         zoom: 1
